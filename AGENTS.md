@@ -203,6 +203,23 @@ Vercel runs the same validation as part of every build. A bad file therefore fai
    - Correction: `news: fix 2026-11-08 07:00 (<short reason>)`
 5. Push straight to `main`: `git push origin main`. If the push is rejected because `main` moved, run `git pull --rebase` and validate again, then push. Never force-push.
 
+#### Owner‑approved automated publisher (PR‑only, content‑only)
+
+This owner‑authorized path supports once‑daily unattended content‑only publishing: an automated publisher prepares a branch and opens a pull request instead of pushing directly to `main`. A conditional automated merge to `main` is permitted only after all gates pass on the exact head commit: the diff matches the strict path allowlist below, content validation and a full build succeed, and all applicable PR checks are green.
+
+- Create a feature branch from `main` and commit only allowed paths:
+  - `content/news/<new-file>.json` (a new edition file), and/or
+  - `public/news-images/<story-id>*.webp` (new photo files only).
+- Do not modify or delete any existing files. Do not change application code, configuration, scripts, workflows, or past editions/photos.
+- In the PR, ensure `npm ci`, `npm run validate:content`, and `npm run build` have run successfully on the exact head commit.
+- The parent reviewer must verify that:
+  - the diff touches only the allowed paths above;
+  - validation and the full build succeed, and any required PR checks are green;
+  - the head SHA being merged is exactly the reviewed one; no force‑push.
+- After merge to `main`, Vercel will build and deploy. The edition is not considered published until the production deployment succeeds and `/api/health` and the latest/archive pages show the new edition.
+
+The same PR workflow is available for ongoing once‑daily publishing authorized by the owner. It does not broaden allowed paths or permit editing past editions/photos. This AGENTS.md modification is a setup‑only change; the daily publisher must not edit this file.
+
 ### 9. Verify the deployment
 
 A push is **not** published until Vercel has deployed it successfully:

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "title": "Sunday Briefing — November 8, 2026",
+  "subtitle": "Ten U.S. and Colorado stories from the Sunday morning briefing.",
+  "intro": "Stories retained from the November 8 morning briefing, as of 7:30 a.m. Mountain Time, without an afternoon news refresh. Six national and four Colorado stories, selected for prominence and relevance rather than measured popularity. This edition is text-only: public republication rights for the Page photographs have not been documented.",
+  "publishedAt": "2026-11-08T14:46:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-08-hegseth-impeachment",
+      "headline": "House poised to impeach Pete Hegseth after GOP midterm defeat",
+      "summary": "House Republican leaders are preparing for enough GOP defections to impeach Defense Secretary Pete Hegseth when Rep. Thomas Massie's resolution comes to a vote this week. Massie accuses Hegseth of defying Congress and illegally continuing the U.S. war in Iran; Hegseth has called the effort a sham, President Trump said Wednesday he intends to keep him in the post, and removing him would still require a two-thirds vote in the Senate.",
+      "sourceName": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/11/08/pete-hegseth-impeachment-house-republicans-massie"
+    },
+    {
+      "id": "2026-11-08-democrats-congress-priorities",
+      "headline": "Healthcare, tariffs – but not Trump impeachment: Democrats chart next two years of power",
+      "summary": "After winning both chambers in Tuesday's midterms, incoming Democratic leaders say they will try to restore Affordable Care Act premium tax credits, reverse last year's Medicaid cuts, roll back tariffs and end the Iran war. House leader-in-waiting Hakeem Jeffries said impeaching President Trump is not under discussion in his caucus, and the president can still veto bills that lack a veto-proof majority.",
+      "sourceName": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms"
+    },
+    {
+      "id": "2026-11-08-dana-white-press-secretary-offer",
+      "headline": "Trump asks UFC chief Dana White to be White House press secretary",
+      "summary": "President Trump said Saturday that he has offered UFC chief executive Dana White the job of White House press secretary, a post vacant since Katie Zacharia left after five days last month, succeeding Karoline Leavitt. White, speaking after a boxing event in London, said he will meet Trump at the White House on Monday to discuss the offer.",
+      "sourceName": "Al Jazeera / Reuters",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary"
+    },
+    {
+      "id": "2026-11-08-iran-task-force-iron-gate",
+      "headline": "US task force to cut off Iran's transport of advanced weapons: What we know",
+      "summary": "U.S. Central Command said Saturday it created Task Force Iron Gate, a Tampa-based group of about 20 civilian and military personnel, to help stop advanced weapons, dual-use technology, sanctioned goods and illicit revenue from moving across Iran's land borders and the Caspian Sea. CENTCOM said the step builds on a naval blockade that it says has blocked more than $25 billion in Iranian crude-oil exports; Iran's Revolutionary Guard, quoted by Fars news agency, dismissed the plan as \"just a play on words.\"",
+      "sourceName": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/8/us-task-force-to-cut-off-irans-transport-of-advanced-weapons-what-we-know"
+    },
+    {
+      "id": "2026-11-08-nvidia-huang-congress-scrutiny",
+      "headline": "Nvidia CEO under growing scrutiny amid reported ties to Chinese spy",
+      "summary": "Nvidia CEO Jensen Huang is facing congressional scrutiny after The New York Times and Financial Times reported that tech executive Alice Huang was recruited by Chinese intelligence to gather information on him and influence U.S. chip-export policy. Nvidia says their contact was ordinary business and that no sensitive information was shared, the Chinese government has denied the allegation, and House committee chairs have asked Huang to schedule a briefing by Nov. 11.",
+      "sourceName": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy"
+    },
+    {
+      "id": "2026-11-08-social-security-new-senators",
+      "headline": "Social Security's under threat. Can new senators save it?",
+      "summary": "The Social Security trust fund that supplements payroll taxes is projected to run dry in 2032, which the program's trustees say would trigger an automatic 22 percent cut in benefits. The 35 senators elected last week will serve through that window; several of the newly elected Democrats say they want to raise or eliminate the payroll-tax cap, set at $184,500 in 2026. A suitable article photograph could not be retrieved, so this item is presented as text only.",
+      "sourceName": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/money/2026/11/08/new-senators-save-social-security/92641624007/"
+    },
+    {
+      "id": "2026-11-08-pagosa-springs-flood-recovery",
+      "headline": "Their town has been burned, flooded and nearly cut in half. But residents want you to know \"Pagosa is here.\"",
+      "summary": "A Colorado Sun report published this morning describes recovery in Pagosa Springs after back-to-back historic floods that peaked around Oct. 23 and Nov. 1, undercutting buildings, damaging U.S. 160 and leaving the town largely dependent on a highway detour through New Mexico. Gov. Jared Polis requested nearly $27 million in federal aid after the first flood, and state officials said the damage total is expected to rise as assessments from the second storm continue.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/08/pagosa-springs-flood-recovery/"
+    },
+    {
+      "id": "2026-11-08-colorado-proposition-135-passes",
+      "headline": "Colorado voters ban transgender surgeries on minors",
+      "summary": "The Associated Press called Proposition 135 for passage on Friday. The Denver Gazette reported this morning that it had about 53 percent support with nearly 2.6 million votes counted, after trailing in the first election-night tallies. The measure prohibits surgeries on minors intended to alter biological sex characteristics and bars public funds or insurance from paying for those procedures, while allowing circumcision and treatment for certain medical sex disorders; a related measure, Proposition 134, also passed, 52 percent to 48 percent.",
+      "sourceName": "The Denver Gazette",
+      "sourceUrl": "https://gazette.com/thetribune/2026/11/08/colorado-voters-ban-transgender-surgeries-on-minors-2-3/"
+    },
+    {
+      "id": "2026-11-08-colorado-amendment-87-passes",
+      "headline": "Colorado voters approve Amendment 87, imposing higher income taxes on top earners",
+      "summary": "The Associated Press called Amendment 87 on Friday, with unofficial results then at 51.4 percent yes and 48.6 percent no, restoring a graduated Colorado income tax for the first time since 1986. The Colorado Sun reports the measure is estimated to raise about $2 billion a year beginning in the 2027 tax year, cutting taxes on the first $100,000 of income and raising them on households and businesses making more than about $500,000, with the money available for healthcare, public schools and childcare; Gov. Jared Polis and Gov.-elect Phil Weiser opposed it.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/06/amendment-87-results-passes-graduated-income-tax/"
+    },
+    {
+      "id": "2026-11-08-i-70-de-beque-transformer-crash",
+      "headline": "Semi crash spills transformer and briefly sparks fire, shutting down eastbound I-70 west of De Beque",
+      "summary": "A semi hauling a large transformer lost its load about 2:40 p.m. Saturday near milepost 57 on eastbound Interstate 70 west of De Beque after the cargo shifted on a curve and a tie-down chain broke, Colorado State Patrol told KKCO. The transformer leaked fuel and briefly caught fire before crews put the flames out; no one was hurt, and as of Saturday night troopers said an extended closure remained while crews cleared the highway. KKCO's lead image was a generic police light-bar photograph, not a picture of the crash, so this item is presented as text only.",
+      "sourceName": "KKCO",
+      "sourceUrl": "https://www.kkco11news.com/2026/11/08/semi-crash-spills-transformer-briefly-sparks-fire-shutting-down-eastbound-i-70-west-de-beque/"
+    }
+  ]
+}
