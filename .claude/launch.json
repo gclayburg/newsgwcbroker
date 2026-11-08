@@ -12,6 +12,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev", "--", "-p", "3001"],
       "port": 3001
+    },
+    {
+      "name": "next-dev-sandbox",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:sandbox", "--", "-p", "3002"],
+      "port": 3002
     }
   ]
 }

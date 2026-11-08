@@ -12,7 +12,14 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "validate:content": "node scripts/validate-content.mjs"
+    "validate:content": "node scripts/validate-content.mjs",
+    "dev:sandbox": "NEWS_CONTENT_DIR=.sandbox/news NEWS_IMAGES_PATH=news-images-sandbox next dev",
+    "build:sandbox": "NEWS_CONTENT_DIR=.sandbox/news NEWS_IMAGES_PATH=news-images-sandbox npm run build",
+    "sandbox:seed": "node scripts/sandbox.mjs seed",
+    "sandbox:publish": "node scripts/sandbox.mjs publish",
+    "sandbox:list": "node scripts/sandbox.mjs list",
+    "sandbox:clear": "node scripts/sandbox.mjs clear",
+    "news:image": "node scripts/prepare-image.mjs"
   },
   "dependencies": {
     "next": "16.4.5",
@@ -26,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

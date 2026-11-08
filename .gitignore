@@ -58,3 +58,9 @@ Thumbs.db
 
 # Claude Code per-user local settings (shared config like launch.json is committed)
 .claude/settings.local.json
+
+# local sandbox editions for testing (npm run sandbox:seed)
+/.sandbox/
+
+# sandbox test photos (npm run sandbox:seed)
+/public/news-images-sandbox/

@@ -1,15 +1,40 @@
 #!/usr/bin/env node
 // Validates news edition files in content/news/ against the schema in AGENTS.md.
-// Usage: node scripts/validate-content.mjs [dir]   (default: content/news)
+// Usage: node scripts/validate-content.mjs [dir] [--images-dir <dir>]
+//   dir defaults to $NEWS_CONTENT_DIR, then content/news.
+//   --images-dir defaults to public/$NEWS_IMAGES_PATH, then public/news-images.
 // Exits 0 when every file is valid, 1 otherwise. No dependencies.
 //
 // Edition files are named YYYY-MM-DD-HHMM.json: the edition's publishedAt
 // converted to US Mountain Time (America/Denver), 24-hour clock.
 
-import { readdirSync, readFileSync, existsSync } from "node:fs";
-import { join, resolve } from "node:path";
+import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import {
+  IMAGE_FILE_RE,
+  IMAGE_MAX_BYTES,
+  IMAGE_MAX_HEIGHT,
+  IMAGE_MIN_WIDTH,
+  IMAGE_WIDTH,
+  imageFileMatchesStory,
+  imagesDir as defaultImagesDir,
+  readWebpSize,
+} from "./lib/news-images.mjs";
 
-const dir = resolve(process.argv[2] ?? "content/news");
+const ROOT = resolve(fileURLToPath(new URL("..", import.meta.url)));
+const argv = process.argv.slice(2);
+const flag = (name) => {
+  const i = argv.indexOf(name);
+  if (i === -1) return undefined;
+  const v = argv[i + 1];
+  argv.splice(i, 2);
+  return v;
+};
+const imagesDirArg = flag("--images-dir");
+const dir = resolve(argv[0] ?? (process.env.NEWS_CONTENT_DIR || "content/news"));
+const imagesDir = imagesDirArg ? resolve(imagesDirArg) : defaultImagesDir(ROOT);
+const referencedImages = new Set();
 
 const FILE_RE = /^(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})\.json$/;
 const TIMEZONE = "America/Denver";
@@ -24,15 +49,24 @@ const TIMESTAMP_RE =
 
 const EDITION_KEYS = {
   required: ["schemaVersion", "date", "title", "publishedAt", "stories"],
-  optional: ["updatedAt"],
+  optional: ["subtitle", "intro", "updatedAt"],
 };
 const STORY_KEYS = {
   required: ["id", "headline", "summary", "sourceName", "sourceUrl"],
-  optional: ["category", "publishedAt"],
+  optional: ["category", "publishedAt", "image"],
+};
+const IMAGE_KEYS = {
+  required: ["file", "alt", "credit"],
+  optional: ["caption"],
 };
 
 const LIMITS = {
   title: 120,
+  subtitle: 300,
+  intro: 1200,
+  imageAlt: 300,
+  imageCaption: 300,
+  imageCredit: 150,
   headline: 200,
   summary: 800,
   sourceName: 100,
@@ -132,6 +166,51 @@ function validateStory(errors, where, story, seenIds) {
   if ("publishedAt" in story && !isValidTimestamp(story.publishedAt)) {
     errors.push(`${where}.publishedAt: must be ISO 8601 with offset, e.g. 2026-11-08T06:30:00-07:00`);
   }
+  if ("image" in story) validateImage(errors, `${where}.image`, story.image, story.id);
+}
+
+function validateImage(errors, where, image, storyId) {
+  if (image === null || typeof image !== "object" || Array.isArray(image)) {
+    errors.push(`${where}: must be an object`);
+    return;
+  }
+  checkKeys(errors, where, image, IMAGE_KEYS);
+  validateImageFile(errors, `${where}.file`, image.file, storyId);
+  checkString(errors, `${where}.alt`, image.alt, LIMITS.imageAlt);
+  checkString(errors, `${where}.credit`, image.credit, LIMITS.imageCredit);
+  if ("caption" in image) checkString(errors, `${where}.caption`, image.caption, LIMITS.imageCaption);
+}
+
+function validateImageFile(errors, where, file, storyId) {
+  if (typeof file !== "string" || !IMAGE_FILE_RE.test(file)) {
+    errors.push(`${where}: must be a file name like "<story id>.webp" (lowercase, no folders)`);
+    return;
+  }
+  if (typeof storyId === "string" && !imageFileMatchesStory(file, storyId)) {
+    errors.push(`${where}: must be named after the story: "${storyId}.webp" (or "${storyId}-2.webp" for a replacement photo)`);
+  }
+  referencedImages.add(file);
+  const path = join(imagesDir, file);
+  const shown = relative(process.cwd(), path);
+  if (!existsSync(path)) {
+    errors.push(`${where}: ${shown} does not exist; save the photo there (npm run news:image)`);
+    return;
+  }
+  const buf = readFileSync(path);
+  if (buf.length > IMAGE_MAX_BYTES) {
+    errors.push(`${where}: ${shown} is ${Math.round(buf.length / 1024)} KB; max is ${IMAGE_MAX_BYTES / 1024} KB`);
+  }
+  const size = readWebpSize(buf);
+  if (!size) {
+    errors.push(`${where}: ${shown} is not a WebP image`);
+    return;
+  }
+  if (size.width > IMAGE_WIDTH || size.width < IMAGE_MIN_WIDTH) {
+    errors.push(`${where}: ${shown} is ${size.width} px wide; must be ${IMAGE_WIDTH} px (or the original width if smaller, min ${IMAGE_MIN_WIDTH})`);
+  }
+  if (size.height > IMAGE_MAX_HEIGHT) {
+    errors.push(`${where}: ${shown} is ${size.height} px tall; max is ${IMAGE_MAX_HEIGHT} px`);
+  }
 }
 
 function validateEdition(file, data) {
@@ -153,6 +232,8 @@ function validateEdition(file, data) {
   if (data.date !== fileDate) errors.push(`date: "${data.date}" must equal the filename date "${fileDate}"`);
 
   checkString(errors, "title", data.title, LIMITS.title);
+  if ("subtitle" in data) checkString(errors, "subtitle", data.subtitle, LIMITS.subtitle);
+  if ("intro" in data) checkString(errors, "intro", data.intro, LIMITS.intro, { allowNewlines: true });
 
   if (!isValidTimestamp(data.publishedAt)) {
     errors.push(`publishedAt: must be ISO 8601 with offset, e.g. 2026-11-08T07:00:00-07:00`);
@@ -237,6 +318,14 @@ function main() {
   if (!failed && publishedAtSeen.size) {
     const [latestT, latestFile] = [...publishedAtSeen].sort((a, b) => b[0] - a[0])[0];
     console.log(`Latest edition (shown on homepage): ${latestFile} (${new Date(latestT).toISOString()})`);
+  }
+
+  // Photos in the images folder that no edition uses (harmless; report only).
+  if (existsSync(imagesDir) && statSync(imagesDir).isDirectory()) {
+    const unused = readdirSync(imagesDir).filter((f) => f.endsWith(".webp") && !referencedImages.has(f));
+    if (unused.length) {
+      console.log(`Note: ${unused.length} photo(s) in ${relative(process.cwd(), imagesDir)} are not used by any edition: ${unused.slice(0, 5).join(", ")}${unused.length > 5 ? ", ..." : ""}`);
+    }
   }
 
   if (failed) {
