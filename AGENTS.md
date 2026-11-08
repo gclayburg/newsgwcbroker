@@ -2,7 +2,7 @@
 
 Instructions for automated agents working in this repository. `CLAUDE.md` is a symlink to this file.
 
-- **Publishing agents (Grok Bot / the News365 routine):** read [Publishing news editions](#publishing-news-editions). You only add or update edition files.
+- **Publishing agents (Grok Bot / the News365 routine):** read [Publishing news editions](#publishing-news-editions). You only add edition files.
 - **Coding agents:** also read [Developing the site](#developing-the-site).
 
 ## Project at a glance
@@ -13,9 +13,12 @@ Instructions for automated agents working in this repository. `CLAUDE.md` is a s
 | Repository | https://github.com/gclayburg/newsgwcbroker (public) |
 | Production branch | `main`: every push to `main` is built and deployed by Vercel |
 | Framework | Next.js 16 (App Router), TypeScript, Tailwind CSS v4, Node.js 24 |
-| News content | `content/news/YYYY-MM-DD.json`: one JSON file per daily edition |
+| News content | `content/news/YYYY-MM-DD-HHMM.json`: one JSON file per edition, named by its publish date and time in Mountain Time |
+| Timezone | All edition dates and times are **US Mountain Time (`America/Denver`)** |
 
 There is no database and no publishing API. **Publishing = committing a valid edition file to `main`.** Vercel sees the push, builds the site, and the new edition goes live when that build succeeds.
+
+**The homepage always shows the single latest edition**, meaning the edition with the latest publish date and time. Publishing a new edition replaces the homepage contents. Older editions stay in the repository as the archive.
 
 > **Current status:** the site does not yet render editions. Edition files are stored and validated on every build, but pages that display them are still to be built. Publish normally anyway. The files you add now will appear once those pages exist.
 
@@ -23,22 +26,42 @@ There is no database and no publishing API. **Publishing = committing a valid ed
 
 ## Publishing news editions
 
-### 1. Where files go
+### 1. Editions: usually one a day, sometimes more
+
+- Normally there is **one edition per day**, e.g. a morning edition.
+- Later the same day there may be **additional editions**: an update, a breaking-news edition, an evening edition. There may be several.
+- **Every edition is a new, separate file** named with its publish date *and* time. Never overwrite or rename an existing edition to publish newer news.
+- **Each edition is a complete front page.** The homepage shows only the latest edition, so a later edition must contain **every story that should appear on the homepage**: stories carried over from earlier editions plus new ones, in display order. It is not a list of only what changed.
+
+### 2. Where files go and how they are named
 
 ```
 content/
   news/
-    2026-11-08.json
-    2026-11-09.json
+    2026-11-08-0700.json   ← morning edition, 7:00 a.m. MT
+    2026-11-08-1530.json   ← later update, 3:30 p.m. MT
+    2026-11-08-2015.json   ← evening edition, 8:15 p.m. MT  (latest, so this one shows on the homepage)
+    2026-11-09-0700.json
     ...
 ```
 
-- One file per edition, named `YYYY-MM-DD.json`, using the **edition date**.
-- The edition date is the calendar date in **US Mountain Time (`America/Denver`)**, the site's home timezone.
+- File name: **`YYYY-MM-DD-HHMM.json`**
+  - `YYYY-MM-DD`: the publish date in Mountain Time
+  - `HHMM`: the publish time in Mountain Time, **24-hour clock**, hours and minutes, no colon (`0700` = 7:00 a.m., `1530` = 3:30 p.m., `0005` = 12:05 a.m.)
+- The file name must match the edition's `publishedAt` timestamp converted to Mountain Time (see below). Example: `publishedAt` `2026-11-08T15:30:00-07:00` → `2026-11-08-1530.json`.
+- If a file with that name already exists (two editions in the same minute), wait until the next minute and use the new time. Never overwrite an existing edition.
 - Put **nothing else** in `content/news/`: no subfolders, drafts, `.md` files or images. The only other allowed file is `.gitkeep`.
-- **The latest edition** is the file with the greatest date. Never put a future date on an edition to make it "newer".
 
-### 2. File format (schema version 1)
+### 3. Which edition is "latest"
+
+The **latest edition is the one with the latest `publishedAt`** timestamp. Its file name is also the latest date and time. That edition is what the homepage shows.
+
+- `publishedAt` must be the actual time you publish. **Never use a future time.** A future timestamp would make the edition "latest" too early and is rejected by validation.
+- Two editions may not share the same `publishedAt`.
+
+### 4. File format (schema version 1)
+
+Example file `content/news/2026-11-08-0700.json`:
 
 ```json
 {
@@ -65,17 +88,17 @@ content/
 | Field | Required | Type / rule |
 |---|---|---|
 | `schemaVersion` | yes | The number `1` |
-| `date` | yes | `YYYY-MM-DD`; **must equal the filename** |
-| `title` | yes | Plain text, single line, ≤ 120 chars |
-| `publishedAt` | yes | ISO 8601 timestamp **with seconds and a UTC offset** (`-07:00` / `-06:00`) or `Z` |
-| `updatedAt` | no | Same format as `publishedAt`; set it when you revise an edition; must not be earlier than `publishedAt` |
+| `date` | yes | `YYYY-MM-DD`, the Mountain Time publish date; **must equal the date in the file name** |
+| `title` | yes | Plain text, single line, ≤ 120 chars (e.g. `Morning Briefing — November 8, 2026`, `Afternoon Update — November 8, 2026`) |
+| `publishedAt` | yes | When this edition is published: ISO 8601 **with seconds and a UTC offset**. Use the Mountain Time offset: `-07:00` while standard time is in effect (roughly November–March), `-06:00` during daylight saving time (roughly March–November). Converted to Mountain Time, it must match the file name's date and `HHMM`. Must not be in the future. |
+| `updatedAt` | no | Same format; set it **only** when correcting an error in an already-published edition (see step 5); must not be earlier than `publishedAt` |
 | `stories` | yes | Array of 1–50 story objects, in display order (most important first) |
 
 **Story fields**
 
 | Field | Required | Type / rule |
 |---|---|---|
-| `id` | yes | Lowercase kebab-case (`a-z`, `0-9`, `-`), ≤ 80 chars, **must start with the edition date** (`2026-11-08-…`), unique within the edition. Once published, never change a story's `id`. |
+| `id` | yes | Lowercase kebab-case (`a-z`, `0-9`, `-`), ≤ 80 chars, **must start with the date the story first appeared** (`2026-11-08-…`), unique within the edition. **When a story carries over into a later edition, keep the same `id`.** Never change an `id` once published. |
 | `headline` | yes | Plain text, single line, ≤ 200 chars |
 | `summary` | yes | Plain text, ≤ 800 chars; may contain line breaks; **no HTML, no Markdown** |
 | `sourceName` | yes | Publication name, plain text, ≤ 100 chars (e.g. `Reuters`) |
@@ -91,24 +114,24 @@ content/
 - Use plain UTF-8 text. Typographic quotes and dashes are fine. No HTML tags, Markdown syntax, emoji-only headlines or tracking parameters in URLs (strip `utm_*`).
 - Files must be valid JSON: double quotes, no comments, no trailing commas. Format with 2-space indentation and a final newline.
 
-### 3. New edition vs. update
+### 5. New editions vs. corrections
 
-- **First publish of the day:** create `content/news/<today>.json` with `publishedAt` set to now.
-- **Later updates the same day:** edit that same file. Add, reorder or correct stories, and set `updatedAt` to now. Keep `publishedAt` unchanged.
-- **Past editions:** don't modify them, except to fix a factual error or a broken link. Never delete or rename edition files.
+- **New or updated news (any time of day):** create a **new** edition file with the current Mountain Time date and time. Include all stories that should be on the homepage. Carried-over stories keep their `id`, and you may revise their headline or summary.
+- **Correcting a mistake in an edition you already published** (a factual error, typo or broken link): edit that edition's file in place and set `updatedAt` to now. Keep `publishedAt` and the file name unchanged. If the edition is still the latest one, the correction appears on the homepage after deployment.
+- Never delete or rename edition files.
 
-### 4. What you may change
+### 6. What you may change
 
 - ✅ Files in `content/news/` only.
 - ❌ Never edit application code, configuration, `package.json`, `package-lock.json`, this file, or anything else. If something outside `content/news/` seems to need a change, stop and report it instead.
 
-### 5. Validate before you commit
+### 7. Validate before you commit
 
 From the repository root:
 
 ```bash
 npm ci                     # first run, or whenever package-lock.json changed
-npm run validate:content   # checks every edition file against the schema above
+npm run validate:content   # checks every edition file against the rules above
 npm run build              # full production build; also re-runs validation
 ```
 
@@ -116,18 +139,17 @@ All commands must exit with code 0. `validate:content` prints `✓ <file>` for e
 
 Vercel runs the same validation as part of every build. A bad file therefore fails the deployment and **the previous version of the site stays live**. A failed build still counts as a failed publish.
 
-### 6. Commit and push
+### 8. Commit and push
 
 1. Start from an up-to-date `main`: `git checkout main && git pull --ff-only`
-2. Add or update the edition file, then validate (step 5).
-3. Stage only that file: `git add content/news/2026-11-08.json`
+2. Add the new edition file (or correct an existing one), then validate (step 7).
+3. Stage only that file: `git add content/news/2026-11-08-1530.json`
 4. Commit with one of these messages:
-   - New edition: `news: publish 2026-11-08`
-   - Same-day update: `news: update 2026-11-08`
-   - Fix to an older edition: `news: fix 2026-11-05 (<short reason>)`
+   - New edition: `news: publish 2026-11-08 15:30`
+   - Correction: `news: fix 2026-11-08 07:00 (<short reason>)`
 5. Push straight to `main`: `git push origin main`. If the push is rejected because `main` moved, run `git pull --rebase` and validate again, then push. Never force-push.
 
-### 7. Verify the deployment
+### 9. Verify the deployment
 
 A push is **not** published until Vercel has deployed it successfully:
 
@@ -137,13 +159,13 @@ A push is **not** published until Vercel has deployed it successfully:
    ```
    `success` means it deployed. `failure` or `error` means it did not. `pending` means the build is still running, so check again shortly.
 2. Confirm the site is up: `https://news.gwcbroker.com/api/health` should return HTTP 200 with `{"status":"ok",...}`.
-3. Once edition pages exist, also confirm the new edition's headlines appear on https://news.gwcbroker.com.
+3. Once edition pages exist, also confirm that https://news.gwcbroker.com shows **your** edition (its title and headlines) as the latest.
 
-### 8. Reporting
+### 10. Reporting
 
 After every run, report one of:
 
-- **Published:** the edition date, the number of stories, the commit SHA, and confirmation that the Vercel check succeeded.
+- **Published:** the edition file name (date and time), the number of stories, the commit SHA, and confirmation that the Vercel check succeeded.
 - **Failed:** what failed (validation, build, push or deployment), the exact error output, and whether anything was pushed. Never report a failed or unverified run as published.
 
 ---
@@ -153,7 +175,10 @@ After every run, report one of:
 - `npm run dev` starts the dev server. Other checks: `npm run lint`, `npm run typecheck`, `npm run validate:content`, `npm run build`.
 - App code lives in `src/app/`; the health endpoint is `src/app/api/health/route.ts`.
 - `scripts/validate-content.mjs` is the source of truth for the edition schema. Keep it, this file, and any TypeScript types for editions in sync. Bump `schemaVersion` for breaking changes.
-- Pages that read `content/news/` must treat the greatest filename date as the latest edition, and must tolerate an empty folder.
+- Pages that read `content/news/` must:
+  - show the edition with the **greatest `publishedAt`** on the homepage. Compare parsed timestamps, not file names: the name only has minute precision, and Mountain Time repeats the 1 a.m. hour when daylight saving ends;
+  - treat each edition as a complete front page (no merging across editions);
+  - tolerate an empty folder.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

@@ -2,13 +2,20 @@
 // Validates news edition files in content/news/ against the schema in AGENTS.md.
 // Usage: node scripts/validate-content.mjs [dir]   (default: content/news)
 // Exits 0 when every file is valid, 1 otherwise. No dependencies.
+//
+// Edition files are named YYYY-MM-DD-HHMM.json: the edition's publishedAt
+// converted to US Mountain Time (America/Denver), 24-hour clock.
 
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 
 const dir = resolve(process.argv[2] ?? "content/news");
 
-const FILE_RE = /^(\d{4}-\d{2}-\d{2})\.json$/;
+const FILE_RE = /^(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})\.json$/;
+const TIMEZONE = "America/Denver";
+// publishedAt may be at most this far ahead of the build clock (clock skew).
+const FUTURE_TOLERANCE_MS = 5 * 60 * 1000;
+const STORY_ID_DATE_RE = /^(\d{4}-\d{2}-\d{2})-/;
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const ID_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 // ISO 8601 with seconds and an explicit offset or Z, e.g. 2026-11-08T07:00:00-07:00
@@ -44,6 +51,24 @@ function isValidCalendarDate(s) {
   );
 }
 
+const mountainFmt = new Intl.DateTimeFormat("en-CA", {
+  timeZone: TIMEZONE,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+});
+
+/** Returns { date: "YYYY-MM-DD", hhmm: "HHMM" } for a timestamp in Mountain Time. */
+function toMountain(ts) {
+  const parts = Object.fromEntries(
+    mountainFmt.formatToParts(new Date(ts)).map((p) => [p.type, p.value]),
+  );
+  return { date: `${parts.year}-${parts.month}-${parts.day}`, hhmm: `${parts.hour}${parts.minute}` };
+}
+
 function isValidTimestamp(s) {
   return typeof s === "string" && TIMESTAMP_RE.test(s) && !Number.isNaN(Date.parse(s));
 }
@@ -69,7 +94,7 @@ function checkKeys(errors, where, obj, spec) {
   }
 }
 
-function validateStory(errors, where, story, editionDate, seenIds) {
+function validateStory(errors, where, story, seenIds) {
   if (story === null || typeof story !== "object" || Array.isArray(story)) {
     errors.push(`${where}: must be an object`);
     return;
@@ -80,8 +105,9 @@ function validateStory(errors, where, story, editionDate, seenIds) {
     errors.push(`${where}.id: must be lowercase kebab-case (a-z, 0-9, hyphens)`);
   } else {
     if (story.id.length > LIMITS.idLength) errors.push(`${where}.id: longer than ${LIMITS.idLength} characters`);
-    if (!story.id.startsWith(`${editionDate}-`)) {
-      errors.push(`${where}.id: must start with the edition date "${editionDate}-"`);
+    const idDate = story.id.match(STORY_ID_DATE_RE)?.[1];
+    if (!idDate || !isValidCalendarDate(idDate)) {
+      errors.push(`${where}.id: must start with the date the story first appeared, e.g. "2026-11-08-..."`);
     }
     if (seenIds.has(story.id)) errors.push(`${where}.id: duplicate id "${story.id}"`);
     seenIds.add(story.id);
@@ -110,7 +136,8 @@ function validateStory(errors, where, story, editionDate, seenIds) {
 
 function validateEdition(file, data) {
   const errors = [];
-  const fileDate = file.match(FILE_RE)[1];
+  const [, fileDate, fileHH, fileMM] = file.match(FILE_RE);
+  const fileHHMM = `${fileHH}${fileMM}`;
 
   if (data === null || typeof data !== "object" || Array.isArray(data)) {
     return ["top level: must be a JSON object"];
@@ -120,12 +147,25 @@ function validateEdition(file, data) {
   if (data.schemaVersion !== 1) errors.push(`schemaVersion: must be the number 1`);
 
   if (!isValidCalendarDate(fileDate)) errors.push(`filename: ${fileDate} is not a real calendar date`);
+  if (Number(fileHH) > 23 || Number(fileMM) > 59) {
+    errors.push(`filename: ${fileHHMM} is not a valid 24-hour time (0000-2359)`);
+  }
   if (data.date !== fileDate) errors.push(`date: "${data.date}" must equal the filename date "${fileDate}"`);
 
   checkString(errors, "title", data.title, LIMITS.title);
 
   if (!isValidTimestamp(data.publishedAt)) {
     errors.push(`publishedAt: must be ISO 8601 with offset, e.g. 2026-11-08T07:00:00-07:00`);
+  } else {
+    const mt = toMountain(data.publishedAt);
+    if (mt.date !== fileDate || mt.hhmm !== fileHHMM) {
+      errors.push(
+        `publishedAt: ${data.publishedAt} is ${mt.date} ${mt.hhmm} Mountain Time, so the file must be named ${mt.date}-${mt.hhmm}.json`,
+      );
+    }
+    if (Date.parse(data.publishedAt) > Date.now() + FUTURE_TOLERANCE_MS) {
+      errors.push(`publishedAt: ${data.publishedAt} is in the future`);
+    }
   }
   if ("updatedAt" in data) {
     if (!isValidTimestamp(data.updatedAt)) {
@@ -142,7 +182,7 @@ function validateEdition(file, data) {
       errors.push(`stories: must contain ${LIMITS.minStories}-${LIMITS.maxStories} stories (has ${data.stories.length})`);
     }
     const seenIds = new Set();
-    data.stories.forEach((s, i) => validateStory(errors, `stories[${i}]`, s, fileDate, seenIds));
+    data.stories.forEach((s, i) => validateStory(errors, `stories[${i}]`, s, seenIds));
   }
   return errors;
 }
@@ -158,9 +198,10 @@ function main() {
 
   let failed = 0;
   let checked = 0;
+  const publishedAtSeen = new Map(); // epoch ms -> file name
   for (const e of entries) {
     if (!e.isFile() || !FILE_RE.test(e.name)) {
-      console.error(`✗ ${e.name}: unexpected entry; only YYYY-MM-DD.json files belong in ${dir}`);
+      console.error(`✗ ${e.name}: unexpected entry; only YYYY-MM-DD-HHMM.json files belong in ${dir}`);
       failed++;
       continue;
     }
@@ -181,6 +222,21 @@ function main() {
     } else {
       console.log(`✓ ${e.name} (${data.stories.length} stories)`);
     }
+    if (isValidTimestamp(data?.publishedAt)) {
+      const t = Date.parse(data.publishedAt);
+      const other = publishedAtSeen.get(t);
+      if (other) {
+        console.error(`✗ ${e.name}: publishedAt is identical to ${other}; each edition needs a unique time`);
+        failed++;
+      } else {
+        publishedAtSeen.set(t, e.name);
+      }
+    }
+  }
+
+  if (!failed && publishedAtSeen.size) {
+    const [latestT, latestFile] = [...publishedAtSeen].sort((a, b) => b[0] - a[0])[0];
+    console.log(`Latest edition (shown on homepage): ${latestFile} (${new Date(latestT).toISOString()})`);
   }
 
   if (failed) {
