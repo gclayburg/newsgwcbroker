@@ -1,69 +1,34 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="relative isolate flex min-h-screen flex-1 items-center justify-center overflow-hidden px-6">
+      {/* Animated aurora background */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="animate-aurora absolute -left-1/4 -top-1/4 h-[70vmax] w-[70vmax] rounded-full bg-[radial-gradient(circle_at_center,rgba(124,58,237,0.45),transparent_60%)] blur-3xl" />
+        <div className="animate-aurora absolute -bottom-1/4 -right-1/4 h-[60vmax] w-[60vmax] rounded-full bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.4),transparent_60%)] blur-3xl [animation-delay:-6s]" />
+        <div className="animate-aurora absolute left-1/3 top-1/2 h-[45vmax] w-[45vmax] rounded-full bg-[radial-gradient(circle_at_center,rgba(236,72,153,0.3),transparent_60%)] blur-3xl [animation-delay:-12s]" />
+        {/* Subtle grid overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+      </div>
+
+      <section className="animate-fade-up w-full max-w-3xl rounded-3xl border border-white/10 bg-white/[0.04] p-10 text-center shadow-[0_0_80px_-20px_rgba(124,58,237,0.5)] backdrop-blur-xl sm:p-16">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/70">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+          </span>
+          Live
+        </span>
+
+        <h1 className="animate-shimmer mt-8 bg-[linear-gradient(90deg,#c4b5fd,#7dd3fc,#f9a8d4,#c4b5fd)] bg-[length:200%_auto] bg-clip-text text-5xl font-semibold tracking-tight text-transparent sm:text-7xl">
+          Hello News World
+        </h1>
+
+        <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/60">
+          The front page is warming up. Stories are on their way.
+        </p>
+
+        <div className="mx-auto mt-10 h-px w-24 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+      </section>
+    </main>
   );
 }

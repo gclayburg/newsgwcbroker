@@ -39,3 +39,22 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# allow committing a template of required env vars
+!.env.example
+
+# logs
+*.log
+
+# OS files
+Thumbs.db
+
+# editors / IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# Claude Code per-user local settings (shared config like launch.json is committed)
+.claude/settings.local.json
