@@ -203,6 +203,23 @@ Vercel runs the same validation as part of every build. A bad file therefore fai
    - Correction: `news: fix 2026-11-08 07:00 (<short reason>)`
 5. Push straight to `main`: `git push origin main`. If the push is rejected because `main` moved, run `git pull --rebase` and validate again, then push. Never force-push.
 
+#### Owner‑approved automated publisher (PR‑only, content‑only)
+
+This one‑time, owner‑authorized exception allows an automated publisher to prepare a branch and open a pull request instead of pushing directly to `main`. All existing validation and verification rules still apply, and the merge to `main` remains a human decision.
+
+- Create a feature branch from `main` and commit only allowed paths:
+  - `content/news/<new-file>.json` (a new edition file), and/or
+  - `public/news-images/<story-id>*.webp` (new photo files only).
+- Do not modify or delete any existing files. Do not change application code, configuration, scripts, workflows, or past editions/photos.
+- In the PR, ensure `npm ci`, `npm run validate:content`, and `npm run build` have run successfully on the exact head commit.
+- The parent reviewer must verify that:
+  - the diff touches only the allowed paths above;
+  - validation and the full build succeed, and any required PR checks are green;
+  - the head SHA being merged is exactly the reviewed one; no force‑push.
+- After merge to `main`, Vercel will build and deploy. The edition is not considered published until the production deployment succeeds and `/api/health` and the latest/archive pages show the new edition.
+
+This PR‑only path is for the supervised test setup described here and does not broaden daily change permissions beyond content/news and new photos.
+
 ### 9. Verify the deployment
 
 A push is **not** published until Vercel has deployed it successfully:
