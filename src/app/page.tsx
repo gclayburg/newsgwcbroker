@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EditionUpdateWatcher } from "@/components/edition-update-watcher";
 import { EditionView } from "@/components/edition-view";
 import { getAllEditions } from "@/lib/editions";
 
@@ -19,9 +20,11 @@ export default function Home() {
         <p className="mt-4 max-w-xl text-lg text-muted">
           No editions have been published yet. The first one will appear here.
         </p>
+        {/* Reloads this page when the first edition is published. */}
+        <EditionUpdateWatcher autoReload />
       </main>
     );
   }
 
-  return <EditionView edition={latest} isLatest older={all[1]} />;
+  return <EditionView edition={latest} isLatest isHome older={all[1]} />;
 }

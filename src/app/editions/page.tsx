@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EditionUpdateWatcher } from "@/components/edition-update-watcher";
 import { getAllEditions, type Edition } from "@/lib/editions";
 import { formatEditionDay, formatTime } from "@/lib/format";
 
@@ -15,7 +16,11 @@ export default function ArchivePage() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 pt-10 sm:px-6 sm:pt-12">
-      <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Archive</h1>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Archive</h1>
+        {/* Shows a "New edition available" button once a newer edition is published. */}
+        <EditionUpdateWatcher knownPublishedAt={all[0]?.publishedAt} />
+      </div>
       <p className="mt-3 text-muted">
         {all.length
           ? `${all.length} edition${all.length === 1 ? "" : "s"}, newest first. Times are Mountain Time.`

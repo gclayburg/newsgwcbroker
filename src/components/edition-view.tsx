@@ -1,15 +1,23 @@
 import Link from "next/link";
+import { EditionUpdateWatcher } from "@/components/edition-update-watcher";
 import { imageUrl, type Edition, type Story } from "@/lib/editions";
 import { formatEditionDay, formatShortDate, formatTime } from "@/lib/format";
 
 export function EditionView({
   edition,
   isLatest,
+  isHome = false,
+  latestPublishedAt,
   newer,
   older,
 }: {
   edition: Edition;
+  /** This edition is the newest one (as of this build). */
   isLatest: boolean;
+  /** Rendered as the homepage: reloads itself when a newer edition is published. */
+  isHome?: boolean;
+  /** publishedAt of the newest edition as of this build (defaults to this edition's). */
+  latestPublishedAt?: string;
   newer?: Edition;
   older?: Edition;
 }) {
@@ -17,18 +25,26 @@ export function EditionView({
     <main className="mx-auto max-w-5xl px-4 pt-10 sm:px-6 sm:pt-12">
       <header className="max-w-3xl">
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
-          {isLatest ? (
-            <span className="rounded-full bg-positive/15 px-2.5 py-0.5 text-xs font-semibold text-positive">
-              Latest edition
-            </span>
-          ) : (
-            <Link
-              href="/"
-              className="no-print rounded-full border border-border px-2.5 py-0.5 text-xs font-medium hover:text-foreground"
-            >
-              Archived edition · Go to latest →
-            </Link>
-          )}
+          {/* Watches for newer editions: the homepage reloads itself; other
+              pages show a "New edition available" button here. */}
+          <EditionUpdateWatcher
+            knownPublishedAt={latestPublishedAt ?? edition.publishedAt}
+            autoReload={isHome}
+            replaceChildren={isLatest}
+          >
+            {isLatest ? (
+              <span className="rounded-full bg-positive/15 px-2.5 py-0.5 text-xs font-semibold text-positive">
+                Latest edition
+              </span>
+            ) : (
+              <Link
+                href="/"
+                className="no-print rounded-full border border-border px-2.5 py-0.5 text-xs font-medium hover:text-foreground"
+              >
+                Archived edition · Go to latest →
+              </Link>
+            )}
+          </EditionUpdateWatcher>
           <span>
             Published {formatTime(edition.publishedAt)}
             {edition.updatedAt && <> · Updated {formatTime(edition.updatedAt)}</>}

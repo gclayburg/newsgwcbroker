@@ -27,7 +27,15 @@ export async function generateMetadata({
 
 export default async function EditionPage({ params }: PageProps<"/editions/[id]">) {
   const { id } = await params;
-  const { edition, newer, older, isLatest } = getEditionWithNeighbors(id);
+  const { edition, newer, older, latest, isLatest } = getEditionWithNeighbors(id);
   if (!edition) notFound();
-  return <EditionView edition={edition} isLatest={isLatest} newer={newer} older={older} />;
+  return (
+    <EditionView
+      edition={edition}
+      isLatest={isLatest}
+      latestPublishedAt={latest?.publishedAt}
+      newer={newer}
+      older={older}
+    />
+  );
 }

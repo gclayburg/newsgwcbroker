@@ -90,10 +90,17 @@ export function getEditionWithNeighbors(id: string): {
   edition?: Edition;
   newer?: Edition;
   older?: Edition;
+  latest?: Edition;
   isLatest: boolean;
 } {
   const all = getAllEditions();
   const i = all.findIndex((e) => e.id === id);
-  if (i === -1) return { isLatest: false };
-  return { edition: all[i], newer: all[i - 1], older: all[i + 1], isLatest: i === 0 };
+  if (i === -1) return { latest: all[0], isLatest: false };
+  return {
+    edition: all[i],
+    newer: all[i - 1],
+    older: all[i + 1],
+    latest: all[0],
+    isLatest: i === 0,
+  };
 }
