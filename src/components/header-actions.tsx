@@ -28,6 +28,8 @@ const ICONS = {
   download: "M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16",
   link: "M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5",
   check: "M20 6 9 17l-5-5",
+  // A pull handle: an arched grip on two mounting feet.
+  handle: "M6 17v-5a6 6 0 0 1 12 0v5M3.5 17h5M15.5 17h5",
   sun: "M12 3v1.5M12 19.5V21M4.6 4.6l1.1 1.1M18.3 18.3l1.1 1.1M3 12h1.5M19.5 12H21M4.6 19.4l1.1-1.1M18.3 5.7l1.1-1.1M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z",
   moon: "M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z",
 };
@@ -67,6 +69,17 @@ export function CopyLinkButton() {
       </span>
       <span className="sr-only sm:hidden">Copy link</span>
     </button>
+  );
+}
+
+/** Opens the Private Handle page that offers to add this site as a handle. */
+export function AddHandleButton() {
+  return (
+    <a href="https://demo1.privatehandle.com/open#news.gwcbroker.com" className={btn} title="Add news.gwcbroker.com as a handle">
+      <Icon d={ICONS.handle} />
+      <span className="hidden sm:inline">Add handle</span>
+      <span className="sr-only sm:hidden">Add handle</span>
+    </a>
   );
 }
 

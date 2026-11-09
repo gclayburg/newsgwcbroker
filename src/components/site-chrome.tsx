@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { CopyLinkButton, PrintButton, ThemeToggle } from "@/components/header-actions";
+import {
+  AddHandleButton,
+  CopyLinkButton,
+  PrintButton,
+  ThemeToggle,
+} from "@/components/header-actions";
 import { SiteLogo } from "@/components/site-logo";
 import { CONTENT_DIR, IS_SANDBOX } from "@/lib/editions";
 import { SITE_NAME } from "@/lib/site";
@@ -32,6 +37,7 @@ export function SiteHeader() {
           </Link>
           <PrintButton />
           <CopyLinkButton />
+          <AddHandleButton />
           <ThemeToggle />
         </nav>
       </div>
