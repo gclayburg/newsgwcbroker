@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "title": "Morning Briefing — November 9, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national and four Colorado stories, as of about 7:30 a.m. Mountain Time on Monday, Nov. 9, ranked by prominence across reputable outlets and relevance rather than measured popularity. Several items are developing: vote counts, the Nvidia inquiry and Iran talks may change. This edition is text-only: public republication rights for the article photographs have not been documented.",
+  "publishedAt": "2026-11-09T07:37:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-09-stephen-miller-chief-of-staff-begins",
+      "headline": "Stephen Miller era begins in Trump's White House",
+      "summary": "Stephen Miller formally takes over as White House chief of staff on Monday, replacing Susie Wiles, whom President Trump moved to his political operation after Republicans lost both chambers of Congress last week. The Hill reports the promotion of the architect of Trump's deportation agenda is widely read as a sign of confrontation with the incoming Democratic majorities; Senate Democratic leader Chuck Schumer and even some Republicans, such as Rep. Marlin Stutzman, criticized the choice.",
+      "sourceName": "The Hill",
+      "sourceUrl": "https://thehill.com/newsletters/morning-report/6207425-stephen-miller-era-white-house-congress-returns-midterms/",
+      "category": "Politics",
+      "publishedAt": "2026-11-09T05:15:00-07:00"
+    },
+    {
+      "id": "2026-11-09-congress-returns-lame-duck",
+      "headline": "Congress returns for lame-duck sprint after bruising midterm losses for GOP",
+      "summary": "Lawmakers return to Washington on Monday for the first time since the midterms. House Republicans vote Tuesday on a new leader to replace Speaker Mike Johnson, with Steve Scalise facing Jim Jordan, while some GOP senators want to delay their own leadership elections. Congress must also act before government funding runs out Dec. 11, and Rep. Thomas Massie plans to force a vote on his articles of impeachment against Defense Secretary Pete Hegseth unless Hegseth resigns.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/midterm-elections-congress-returns-lame-duck/",
+      "category": "Politics",
+      "publishedAt": "2026-11-09T06:51:00-07:00"
+    },
+    {
+      "id": "2026-11-09-trump-iran-strikes-highly-unlikely",
+      "headline": "Trump says renewed Iran strikes 'highly unlikely' if talks progress but warns he could still strike",
+      "summary": "In a CNN interview Sunday, President Trump said a return to open war with Iran is highly unlikely if talks produce a strong agreement on Iran's nuclear program and reopening the Strait of Hormuz, while saying three U.S. aircraft carriers are in the region and threatening Iranian bridges and power plants. Separately, Iranian officials said a U.S. attack hit Qeshm Island overnight without damaging vital infrastructure; that account comes from Iranian media and officials.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+      "category": "World",
+      "publishedAt": "2026-11-08T14:28:00-07:00"
+    },
+    {
+      "id": "2026-11-08-nvidia-huang-congress-scrutiny",
+      "headline": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+      "summary": "Nvidia's board opened an independent investigation Sunday after reports that U.S. intelligence agencies believe businesswoman Alice Huang, with whom CEO Jensen Huang acknowledged having an affair, passed information to Beijing. The board said it has no reason to believe national-security or company secrets were compromised, Huang is cooperating and remains CEO, and the spying allegation has not been proven; House committee chairs have asked him for a closed-door briefing on Nov. 18.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+      "category": "Business",
+      "publishedAt": "2026-11-08T13:12:00-07:00"
+    },
+    {
+      "id": "2026-11-09-trump-deportation-policy-too-tough",
+      "headline": "Trump says his deportation policy might have been \"too tough\" in 60 Minutes interview",
+      "summary": "In a 60 Minutes interview aired Sunday, President Trump said his immigration crackdown both helped and hurt him at the polls and that pursuing working immigrants whose only violation was entering illegally was \"too tough.\" He said he would like an immigration deal with congressional Democrats, though it is unclear whether enforcement will change with hard-liner Stephen Miller now chief of staff.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/",
+      "category": "Politics",
+      "publishedAt": "2026-11-08T17:00:00-07:00"
+    },
+    {
+      "id": "2026-11-09-mississippi-senate-count-continues",
+      "headline": "Watson: 2,800-plus absentee ballots still out as Mississippi count continues",
+      "summary": "Democrat Scott Colom leads Republican Sen. Cindy Hyde-Smith by about 2,574 votes with roughly 97% counted, according to the AP estimate cited by WAPT, and Mississippi's secretary of state says more than 2,800 absentee ballots are still outstanding. The race remains uncalled; its outcome, along with Alaska's still-uncalled Senate race, will set the size of the incoming Democratic Senate majority.",
+      "sourceName": "WAPT",
+      "sourceUrl": "https://www.wapt.com/article/mississippi-election-count-2800-absentee-ballots-out/74370112",
+      "category": "Politics",
+      "publishedAt": "2026-11-09T07:16:00-07:00"
+    },
+    {
+      "id": "2026-11-09-lakewood-rtd-shooting-officers-released",
+      "headline": "Third Colorado police officer injured in RTD shooting released from hospital",
+      "summary": "The last of three officers wounded in Thursday's shootout on an RTD bus at West Colfax Avenue and Wadsworth Boulevard was released from the hospital Sunday, Lakewood police said. The shooting killed Lakewood officer Nick Graham, 33, and injured a bus passenger; police say the 34-year-old suspect, whom officers approached in connection with an earlier hit-and-run, opened fire and died after officers shot back, and he has not been publicly named.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/08/lakewood-rtd-shooting-injured-police-officer-released/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-08T18:38:00-07:00"
+    },
+    {
+      "id": "2026-11-09-broncos-record-one-score-win-panthers",
+      "headline": "Broncos make NFL history with 16th straight one-score win",
+      "summary": "The Broncos beat the Carolina Panthers 26-21 in Charlotte on Sunday, setting an NFL record with their 16th consecutive win in games decided by one score and improving to 7-2 for their fifth straight victory. Bo Nix threw two touchdown passes, a successful Sean Payton challenge produced a key end-zone interception, and Nik Bonitto's late strip-sack sealed it before Denver's bye week.",
+      "sourceName": "NFL.com (The Athletic)",
+      "sourceUrl": "https://www.nfl.com/news/broncos-make-nfl-history-with-16th-straight-one-score-win-it-s-not-by-accident",
+      "category": "Sports"
+    },
+    {
+      "id": "2026-11-09-aurora-data-center-moratorium",
+      "headline": "Aurora mayor flips stance on data centers",
+      "summary": "Aurora Mayor Mike Coffman, who cast the deciding vote against a data center moratorium in August, wants the City Council to reconsider it Monday, saying hyperscale facilities near neighborhoods threaten property values. Reopening the debate needs seven votes and Coffman has six, Axios reports; the council will also consider ending future tax incentives, and a moratorium would not stop the already-approved Trident project near E-470.",
+      "sourceName": "Axios Denver",
+      "sourceUrl": "https://www.axios.com/local/arapahoe/2026/11/09/mayor-coffman-data-center-moratorium",
+      "category": "Colorado"
+    },
+    {
+      "id": "2026-11-09-colorado-voters-reject-local-tax-hikes",
+      "headline": "Amid money worries, Colorado voters reject local tax hikes",
+      "summary": "Front Range voters turned down many local tax increases in last week's election, including three Aurora sales-tax measures and school mill levy overrides in Douglas and Jefferson counties, even as they approved statewide Proposition NN, the Amendment 87 graduated income tax and a regional Front Range passenger-rail tax. Results remain unofficial, and Aurora leaders say infrastructure projects may now wait many years.",
+      "sourceName": "The Denver Gazette",
+      "sourceUrl": "https://www.denvergazette.com/2026/11/08/amid-money-worries-colorado-voters-reject-local-tax-hikes/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-08T14:39:00-07:00"
+    }
+  ]
+}
