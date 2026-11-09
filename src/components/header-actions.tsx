@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const btn =
-  "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm text-muted transition-colors hover:bg-foreground/5 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-subtle";
+  "inline-flex items-center gap-1.5 rounded-full px-2 py-1.5 text-sm text-muted transition-colors hover:bg-foreground/5 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-subtle sm:px-3";
 
 function Icon({ d, className = "" }: { d: string; className?: string }) {
   return (
@@ -92,7 +92,7 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      className={`${btn} px-2`}
+      className={btn}
       onClick={toggle}
       aria-label="Toggle light or dark theme"
       title="Toggle light or dark theme"
