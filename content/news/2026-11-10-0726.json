@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "title": "Morning Briefing — November 10, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national and four Colorado stories, as of about 7:25 a.m. Mountain Time on Tuesday, Nov. 10, ranked by prominence across reputable outlets and relevance rather than measured popularity. Several items are developing: the House Republican leadership vote and a possible House vote on impeaching Defense Secretary Pete Hegseth were still pending, Colorado's 4th District race had not been called by the AP, and the espionage allegation in the Nvidia story is unproven. This edition is text-only: public republication rights for the article photographs have not been documented.",
+  "publishedAt": "2026-11-10T07:26:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-10-house-gop-minority-leader-vote",
+      "headline": "House Republicans to elect a new leader after midterm defeat",
+      "summary": "House Republicans meet behind closed doors Tuesday to choose a minority leader for the next Congress by secret ballot, with Majority Leader Steve Scalise, pitching continuity, facing Judiciary Chair Jim Jordan, pitching a more aggressive posture, after Speaker Mike Johnson stepped aside. The vote follows midterm losses that cost the GOP the House majority; Senate Republicans are also holding leadership elections, and as of this briefing no winner had been reported.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/10/nx-s1-6030988/gop-leadership-election-steve-scalise-jim-jordan",
+      "category": "Politics",
+      "publishedAt": "2026-11-10T03:01:00-07:00"
+    },
+    {
+      "id": "2026-11-10-hegseth-impeachment-political-spectacle",
+      "headline": "Pete Hegseth dismisses Republican's impeachment effort against him as 'a political spectacle'",
+      "summary": "At a Pentagon news conference Tuesday, Defense Secretary Pete Hegseth called Rep. Thomas Massie's eight articles of impeachment, which allege War Powers Resolution violations in the Iran war and unlawful strikes elsewhere, a political spectacle and said every operation was lawful. Because Massie filed the resolution as privileged on Monday, the House must act by Wednesday by voting on it, tabling it or sending it to committee; passage would need at least a few Republicans to join Democrats.",
+      "sourceName": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates",
+      "category": "Politics"
+    },
+    {
+      "id": "2026-11-10-brent-below-90-iran-war-hopes",
+      "headline": "Brent crude falls below $90 for first time since August on Iran war de-escalation hopes",
+      "summary": "Brent crude slipped below $90 a barrel Tuesday morning for the first time since August after President Trump said Monday, following a meeting with Qatar's prime minister, that the Iran war could end \"fairly soon\" and that Iran was militarily \"effectively over.\" Lower oil could ease the fuel prices that weighed on voters, though talks remain unresolved and some analysts still see a risk of renewed escalation.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
+      "category": "Markets",
+      "publishedAt": "2026-11-10T03:38:49-07:00"
+    },
+    {
+      "id": "2026-11-10-ukraine-russia-us-talks-abu-dhabi",
+      "headline": "Ukraine, Russia, US conclude 1st day of trilateral peace talks in Abu Dhabi",
+      "summary": "Ukrainian, Russian and U.S. delegations, with envoys Steve Witkoff and Jared Kushner mediating, held more than four hours of talks in Abu Dhabi on Tuesday, the first three-way round since February, and plan to continue Wednesday. Kyiv hopes to discuss prisoner exchanges and a possible energy and maritime ceasefire; Ukrainian negotiators have played down expectations of a breakthrough in this first round.",
+      "sourceName": "The Kyiv Independent",
+      "sourceUrl": "https://kyivindependent.com/ukraine-russia-us-resume-trilateral-peace-talks-in-abu-dhabi-after-9-month-pause/",
+      "category": "World",
+      "publishedAt": "2026-11-10T01:40:00-07:00"
+    },
+    {
+      "id": "2026-11-08-nvidia-huang-congress-scrutiny",
+      "headline": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
+      "summary": "President Trump said Monday that Nvidia CEO Jensen Huang told him he had no idea the woman he had an affair with, Megaspeed executive Alice Huang, was a spy, that he believes him, and that the FBI is \"looking into\" the matter. The espionage allegation, reported by The New York Times citing U.S. intelligence, is unproven and China calls it groundless; a shareholder class action was also filed against Nvidia and Huang.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
+      "category": "Business",
+      "publishedAt": "2026-11-09T15:07:18-07:00"
+    },
+    {
+      "id": "2026-11-10-supreme-court-big-bend-border-wall",
+      "headline": "Supreme Court says border wall construction can continue in west Texas",
+      "summary": "In an unsigned order Monday, with Justice Ketanji Brown Jackson dissenting, the Supreme Court lifted a federal judge's injunction and let the Trump administration resume border-barrier construction in Texas's Big Bend region, including areas around Big Bend National Park, while the lawsuit continues. The court said the lower court lacked authority to review the Homeland Security waivers of environmental laws; the plan has drawn bipartisan opposition in the region.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/09/nx-s1-6019424/border-wall-big-bend-texas-trump",
+      "category": "Courts",
+      "publishedAt": "2026-11-09T14:47:39-07:00"
+    },
+    {
+      "id": "2026-11-10-laubacher-declares-victory-boebert",
+      "headline": "Eileen Laubacher declares victory in Colorado's 4th District as Lauren Boebert waits for final votes",
+      "summary": "Democrat Eileen Laubacher declared victory Monday over Republican Rep. Lauren Boebert after CNN projected her the winner, leading 48.79% to 47.91% with about 2% of the estimated vote left. The Associated Press had not called the race, and Boebert has not conceded, saying she will wait for overseas and military ballots, which Colorado counties can count through Nov. 13.",
+      "sourceName": "Denver7",
+      "sourceUrl": "https://www.denver7.com/news/politics/eileen-laubacher-declares-victory-in-colorados-4th-district-as-lauren-boebert-waits-for-final-votes",
+      "category": "Colorado",
+      "publishedAt": "2026-11-09T20:06:48-07:00"
+    },
+    {
+      "id": "2026-11-10-ice-rearrests-judge-weighs-contempt",
+      "headline": "ICE official testifies re-arrests of freed detainees have stopped, judge considers contempt",
+      "summary": "U.S. District Judge Charlotte Sweeney is weighing contempt proceedings after testimony that at least 18 detainees whom courts ordered released from the GEO facility in Aurora were quickly re-arrested over about a week. The acting head of ICE's Denver field office testified he authorized the re-arrests starting Oct. 27, believed they did not violate court orders and ended the practice Nov. 4; the ACLU of Colorado called the practice abusive.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/ice-official-testifies-re-arrests-detainees-stopped-judge-considers-contempt/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-09T22:14:10-07:00"
+    },
+    {
+      "id": "2026-11-10-colorado-connector-railroad-agreements",
+      "headline": "Colorado Connector officials look to finalize railroad agreements after voters approve tax hike",
+      "summary": "After voters in the 31-municipality Front Range Passenger Rail District approved Issue 7A, a 0.333% sales tax expected to raise about $295 million a year, district officials resume negotiations with BNSF next week on access to the northern track. They say the money keeps the Colorado Connector on track for Denver-Fort Collins service by 2029 and a full 12-stop Fort Collins-to-Pueblo route by 2032, though talks with BNSF and Union Pacific on the southern segment likely won't start until early 2027.",
+      "sourceName": "KUNC (Colorado Newsline)",
+      "sourceUrl": "https://www.kunc.org/news/2026-11-10/colorado-connector-officials-look-to-finalize-railroad-agreements-after-voters-approve-tax-hike",
+      "category": "Colorado"
+    },
+    {
+      "id": "2026-11-09-aurora-data-center-moratorium",
+      "headline": "Aurora data center tax-incentive ban advances amid another failed push for a moratorium",
+      "summary": "Aurora City Council on Monday advanced a ban on tax rebates for future data centers, which would not affect four existing agreements worth up to about $83 million, but the data center moratorium could not be reconsidered because none of the members who opposed it asked to bring it back. Mayor Mike Coffman says he will propose a new moratorium tied to guaranteed electric service at the Nov. 23 meeting.",
+      "sourceName": "Sentinel Colorado",
+      "sourceUrl": "https://sentinelcolorado.com/metro/aurora-data-center-tax-incentive-ban-advances-amid-another-failed-push-for-a-moratorium/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-10T05:27:45-07:00"
+    }
+  ]
+}
