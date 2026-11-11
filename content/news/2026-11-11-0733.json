@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "title": "Morning Briefing — November 11, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national and four Colorado stories, as of about 7:35 a.m. Mountain Time on Wednesday, Nov. 11 (Veterans Day), ranked by prominence across reputable outlets and relevance rather than measured popularity. Some items involve reports or allegations rather than established facts: the report that Treasury Secretary Scott Bessent was moved over Iranian threats cites unnamed officials, the Iranian nationals' indictment and the ACLU's cover-up claim are allegations, and the Russia-Ukraine prisoner exchange numbers had not been finalized. This edition is text-only: public republication rights for the article photographs have not been documented.",
+  "publishedAt": "2026-11-11T07:33:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-10-house-gop-minority-leader-vote",
+      "headline": "House GOP elects Jim Jordan as next leader in major shakeup after midterms",
+      "summary": "House Republicans picked Judiciary Chairman Jim Jordan, a hard-line Trump ally and Freedom Caucus co-founder, over Majority Leader Steve Scalise to lead them as the minority party in the next Congress, after losing more than 40 House seats in last week's midterms. Separately, Senate Republicans re-elected John Thune as their leader by acclamation Tuesday despite a push by Sen. Ron Johnson and a few colleagues to delay the vote.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/jim-jordan-house-minority-leader-republicans/",
+      "category": "Politics",
+      "publishedAt": "2026-11-10T12:42:00-07:00"
+    },
+    {
+      "id": "2026-11-10-hegseth-impeachment-political-spectacle",
+      "headline": "House votes to effectively end the impeachment effort against Pete Hegseth",
+      "summary": "The House voted 211-204 Tuesday to send Rep. Thomas Massie's articles of impeachment against Defense Secretary Pete Hegseth to committee, heading off a floor vote that could have come Wednesday and making it very unlikely the measure is taken up before this Congress ends. The articles accused Hegseth over the Iran war, boat strikes and the capture of Venezuela's Nicolás Maduro without congressional authorization; Hegseth says every operation was lawful, and Democrats promise investigations when they take the House majority in January.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
+      "category": "Politics",
+      "publishedAt": "2026-11-10T16:43:11-07:00"
+    },
+    {
+      "id": "2026-11-11-gas-below-4-inflation-stubborn",
+      "headline": "Gas prices dip below $4 but inflation remains stubbornly high",
+      "summary": "The Labor Department said consumer prices rose 0.4% in October from September, more than forecasters expected, with housing costs making up about a third of the increase and grocery prices up sharply. At the pump, AAA's national average for regular gas fell below $4 for the first time in three months, to $3.98, though it remains about a dollar higher than before the U.S. went to war with Iran and diesel is still about $6.15.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/10/nx-s1-6034518/inflation-consumer-prices-economy-gas-prices",
+      "category": "Economy",
+      "publishedAt": "2026-11-10T07:35:50-07:00"
+    },
+    {
+      "id": "2026-11-10-ukraine-russia-us-talks-abu-dhabi",
+      "headline": "Russia and Ukraine agree to a large exchange of prisoners of war, officials say",
+      "summary": "At the end of two days of U.S.-mediated talks in Abu Dhabi, the first three-way round since February, U.S. envoy Jared Kushner and both delegations said Wednesday that Russia and Ukraine agreed on what Kushner called the biggest humanitarian prisoner release, with numbers to be finalized. Hopes for a broader breakthrough remain low, with territory and security guarantees still dividing the sides; Kushner says he and Steve Witkoff will meet Vladimir Putin in Moscow Thursday and then Volodymyr Zelenskyy in Dublin.",
+      "sourceName": "NPR (AP)",
+      "sourceUrl": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
+      "category": "World",
+      "publishedAt": "2026-11-11T06:30:00-07:00"
+    },
+    {
+      "id": "2026-11-11-bessent-moved-iran-threats-indictments",
+      "headline": "Bessent reportedly moved to military base over Iranian threats on his life",
+      "summary": "Treasury Secretary Scott Bessent, who leads the Treasury's sanctions campaign against Iran, was moved from his Washington home to a military base because of Iranian threats on his life, according to The New York Times citing officials; the severity of the threat has not been made public, and CNBC had sought comment from the White House and Treasury. Separately, the Justice Department said three Iranian nationals were indicted on terrorism-related charges over nearly 20 alleged attacks and attempts in Europe and the U.S., including a September plot targeting RAF Fairford in Britain; the charges are allegations, and Iran has denied involvement in the Fairford incident.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html",
+      "category": "National security",
+      "publishedAt": "2026-11-10T21:06:47-07:00"
+    },
+    {
+      "id": "2026-11-11-doj-moves-dismiss-bannon-conviction",
+      "headline": "Both sides now? Critics slam DOJ moves to dismiss convictions of Trump allies",
+      "summary": "The Justice Department has asked a court to drop Steve Bannon's contempt-of-Congress conviction, which a jury and an appeals court upheld, \"in the interests of justice,\" and Bannon's lawyers do not oppose it; it earlier sought to vacate seditious-conspiracy convictions of Oath Keepers and Proud Boys leaders. Legal experts told NPR the pattern leaves no opposing party to argue the cases in court, while the department did not respond to NPR's request for comment.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/11/g-s1-152713/doj-abandons-convictions-trump-allies-no-defense",
+      "category": "Justice",
+      "publishedAt": "2026-11-11T03:00:00-07:00"
+    },
+    {
+      "id": "2026-11-11-weiser-first-cabinet-picks",
+      "headline": "Phil Weiser selects top Senate Republican, Denver official for first cabinet roles",
+      "summary": "Colorado Gov.-elect Phil Weiser, a Democrat, nominated state Senate Minority Leader Cleave Simpson, a Republican, as agriculture commissioner, named Denver official and former state Sen. Dominick Moreno as budget director, and created two new cabinet-level roles: Jeni Arndt as director of rural advancement and Scott Steinbrecher as water adviser. Many picks, including Simpson's, require state Senate confirmation, and Weiser takes office in January.",
+      "sourceName": "The Denver Post",
+      "sourceUrl": "https://www.denverpost.com/2026/11/10/colorado-phil-weiser-cabinet/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-10T06:30:43-07:00"
+    },
+    {
+      "id": "2026-11-11-boulder-da-ramsey-case-30-years",
+      "headline": "Boulder County DA says Ramseys shouldn't have been cleared in JonBenet's murder",
+      "summary": "Ahead of the 30th anniversary of JonBenét Ramsey's 1996 killing, Boulder County DA Michael Dougherty said Tuesday he would not have publicly cleared the Ramsey family as then-DA Mary Lacy did in 2008, and he and Police Chief Steve Redfearn expressed rare optimism about solving the case. The Colorado Sun reports investigators hope genetic genealogy can identify an unknown male DNA profile, but the small, mixed 30-year-old sample may allow only one test, so they say the technology isn't ready yet.",
+      "sourceName": "The Denver Post (Daily Camera)",
+      "sourceUrl": "https://www.denverpost.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-10T15:29:16-07:00"
+    },
+    {
+      "id": "2026-11-11-wolf-creek-pass-could-open-weekend",
+      "headline": "Wolf Creek Pass in southern Colorado could open by this weekend, officials say",
+      "summary": "CDOT says limited traffic may be allowed on U.S. 160 over Wolf Creek Pass as early as this weekend as crews clear 6 to 8 feet of rock, mud and debris left by back-to-back historic floods in southwestern Colorado; the pass normally carries about 2,700 to 3,400 vehicles a day. CDOT's director says statewide repair costs could approach $100 million, and a destroyed U.S. 160 bridge between Pagosa Springs and Durango needs a temporary bridge that will take about 30 days to build once materials arrive.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/10/wolf-creek-pass-us-160-flooding-colorado/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-10T14:57:15-07:00"
+    },
+    {
+      "id": "2026-11-11-aclu-cbi-dna-scandal-cover-up",
+      "headline": "ACLU alleges years-long cover-up in Colorado DNA scandal, calls for Colorado Supreme Court action",
+      "summary": "The ACLU, ACLU of Colorado and the Exoneration Project asked the Colorado Supreme Court to hold the state responsible for what they allege was a cover-up of former CBI analyst Missy Woods's DNA tampering, which investigators found in at least 1,045 cases; they say supervisors were alerted in 2014 and 2018 and want the state, not defendants, to prove evidence wasn't manipulated. The CBI says it has addressed the misconduct extensively and that questions about individual cases belong in the courts.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/aclu-alleges-years-long-cover-up-colorado-dna-scandal/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-10T21:59:00-07:00"
+    }
+  ]
+}
