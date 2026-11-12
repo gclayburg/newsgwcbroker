@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "title": "Morning Briefing — November 12, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national and four Colorado stories, as of about 7:30 a.m. Mountain Time on Thursday, Nov. 12, ranked by prominence across reputable outlets and relevance rather than measured popularity. Some items involve allegations or claims rather than established facts: the suspected Chinese espionage link in the Nvidia story comes from U.S. intelligence suspicions reported by CBS News, Israel's claim that militants were operating inside Nasser Hospital was made without evidence, and the White House counsel's \"criminality\" warning is his assertion. Rep. Lauren Boebert's race had not been called by the AP. This edition is text-only: public republication rights for the article photographs have not been documented.",
+  "publishedAt": "2026-11-12T07:32:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-12-nvidia-ceo-jensen-huang-resigns",
+      "headline": "Nvidia CEO Jensen Huang resigns, board of directors announce",
+      "summary": "Nvidia's board said Thursday that co-founder Jensen Huang has resigned as CEO effective immediately, amid an investigation into his affair with a woman U.S. intelligence agencies suspect was spying for China; CFO Colette Kress becomes interim CEO while the board searches for a permanent replacement. The sudden exit at the world's dominant AI-chip maker, whose technology is subject to export controls on China, sent Nvidia shares sharply lower.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
+      "category": "Business",
+      "publishedAt": "2026-11-12T06:57:00-07:00"
+    },
+    {
+      "id": "2026-11-09-mississippi-senate-count-continues",
+      "headline": "Democrat Scott Colom wins Mississippi Senate race, flipping seat in upset",
+      "summary": "Democrat Scott Colom, a district attorney, defeated Republican Sen. Cindy Hyde-Smith in Mississippi, CBS News projects, after a count that stayed undecided for days; Hyde-Smith conceded Wednesday night. Colom will be the first Democrat elected to the Senate from Mississippi since 1982 and the state's first Black senator since Reconstruction, and the result gives Democrats an eighth flipped Senate seat in the midterms.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/",
+      "category": "Politics",
+      "publishedAt": "2026-11-11T16:01:00-07:00"
+    },
+    {
+      "id": "2026-11-12-ice-deportations-arrests-record-high",
+      "headline": "ICE deportations and arrests hit record high as Trump faces reckoning over immigration crackdown",
+      "summary": "ICE deported a record 483,200 people and made more than 491,000 arrests in fiscal 2026, according to Department of Homeland Security figures obtained by CBS News, topping the prior record of 442,640 removals set in fiscal 2025. The numbers land as President Trump, after heavy midterm losses, has said parts of the crackdown may have gone too far, even as he elevated Stephen Miller to chief of staff; CBS notes ICE's counts exclude some government-wide measures.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/",
+      "category": "Immigration",
+      "publishedAt": "2026-11-12T04:00:06-07:00"
+    },
+    {
+      "id": "2026-11-12-israeli-strike-gaza-nasser-hospital",
+      "headline": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
+      "summary": "An Israeli airstrike early Thursday on Nasser Hospital in Khan Younis, one of Gaza's few functioning hospitals, killed six people including a surgeon and wounded at least 28, according to Gaza's Hamas-run Health Ministry. Israel's military said it targeted a Hamas commander and other militants operating inside the hospital but provided no evidence.",
+      "sourceName": "NPR (AP)",
+      "sourceUrl": "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital",
+      "category": "World",
+      "publishedAt": "2026-11-12T02:29:30-07:00"
+    },
+    {
+      "id": "2026-11-12-oil-trump-no-iran-deal-needed",
+      "headline": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+      "summary": "President Trump posted that the U.S. doesn't need a deal with Iran because \"we've got their money\" and \"their Strait,\" comments that raised doubts about a near-term end to the U.S.-Iran war. Oil was little changed Thursday morning, with Brent near $93 and U.S. crude near $86 a barrel, after falling about 16% in November on hopes the fighting was winding down.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+      "category": "Economy",
+      "publishedAt": "2026-11-12T06:24:25-07:00"
+    },
+    {
+      "id": "2026-11-12-white-house-counsel-warns-oversight-democrats",
+      "headline": "Top White House lawyer warns of \"blatant criminality\" in Democrats' investigations push",
+      "summary": "White House counsel Will Scharf wrote to Rep. Robert Garcia, the Democrat set to chair the House Oversight Committee in January, that planned investigations of the administration \"may cross the line into blatant criminality\" and that congressional subpoenas could prompt executive-branch probes. The letter previews a coming clash between the administration and congressional Democrats; the criminality warning is Scharf's assertion, not a finding.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/white-house-counsel-will-scharf-house-oversight-committee-robert-garcia-investigations/",
+      "category": "Politics",
+      "publishedAt": "2026-11-11T09:53:00-07:00"
+    },
+    {
+      "id": "2026-11-12-lakewood-agent-nicholas-graham-funeral",
+      "headline": "Funeral procession, memorial service for fallen Lakewood Agent Nicholas Graham",
+      "summary": "A funeral procession and memorial service for Lakewood police Agent Nicholas Graham, 33, are set for Thursday morning at BRAVE Church in Englewood, with East Hampden Avenue (U.S. 285) closed along the route from about 7:30 a.m. Graham was shot and killed Nov. 5 while confronting a man boarding an RTD bus at Colfax and Wadsworth; three other agents and a bystander were hurt and are now out of the hospital.",
+      "sourceName": "Denver7",
+      "sourceUrl": "https://www.denver7.com/news/front-range/lakewood/how-to-watch-the-funeral-procession-memorial-service-for-fallen-lakewood-agent-nicholas-graham",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T05:20:56-07:00"
+    },
+    {
+      "id": "2026-11-12-mesa-deputy-zwinck-ice-job",
+      "headline": "The Mesa County sheriff's deputy disciplined for collaborating with ICE got a job at ICE",
+      "summary": "Former Mesa County sheriff's deputy Alexander Zwinck, who was disciplined for helping ICE in the 2025 arrest of Utah college student Caroline Dias Goncalves and resigned after Attorney General Phil Weiser sued him alleging illegal information-sharing, is listed as a Homeland Security Investigations special agent in Grand Junction in hacked DHS employee data published by activists. The Sun says it's unclear when he was hired or if he still works there; Zwinck did not respond to questions, though a person answering his listed number confirmed his identity before hanging up.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/11/alexander-zwinck-mesa-sheriff-new-job-ice/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-11T14:43:57-07:00"
+    },
+    {
+      "id": "2026-11-12-jeff-hurd-lone-colorado-republican",
+      "headline": "The lone survivor: How Jeff Hurd endured the blue wave to become Colorado's sole Republican in Congress",
+      "summary": "Republican U.S. Rep. Jeff Hurd held Colorado's 3rd Congressional District against Democrat Dwayne Romero despite a Democratic wave, likely making him the state's only Republican left in its congressional delegation. Lauren Boebert's 4th District race had not been called by the AP, but the Sun reports she no longer appears to have a path to victory.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/12/jeff-hurd-colorado-republican-only-election-survivor/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T03:45:00-07:00"
+    },
+    {
+      "id": "2026-11-12-aurora-arson-reward-2023-apartment-fire",
+      "headline": "Aurora fire investigators search for arson suspect in security video before fire destroyed 5 apartment buildings",
+      "summary": "Aurora Fire Rescue, with help from the ATF, released surveillance video of a suspect and is offering a $60,000 reward in the Dec. 14, 2023, arson that destroyed five apartment buildings under construction near E-470 and South Addison Court. Investigators say the fire was intentionally set and caused $22 million in damage; no one was hurt, and no arrest has been announced.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/aurora-fire-investigators-search-arson-suspect-security-video-fire-destroyed-5-apartment-buildings/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-11T14:41:00-07:00"
+    }
+  ]
+}
