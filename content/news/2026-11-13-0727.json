@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "title": "Morning Briefing — November 13, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national and four Colorado stories, as of about 7:27 a.m. Mountain Time on Friday, Nov. 13, ranked by prominence across reputable outlets and relevance rather than measured popularity. Some items involve allegations, claims or unresolved situations rather than established facts: critics' charges about Commerce Secretary Howard Lutnick's oversight of Nvidia chip exports and the suspected Chinese espionage link are not findings, President Trump's comments about possible military action in Cuba describe no announced operation, and Microsoft's outage recovery was still incomplete at publication. This edition is text-only: public republication rights for the article photographs have not been documented.",
+  "publishedAt": "2026-11-13T07:27:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-13-microsoft-outlook-teams-global-outage",
+      "headline": "Outlook outage continues as Microsoft flags 'encouraging recovery signals'",
+      "summary": "A Microsoft 365 outage that began shortly before 11 a.m. MT Thursday knocked out Outlook email, Teams, Copilot and other services for many users worldwide and was still not fully fixed Friday morning, though Microsoft reported broader recovery in North America. The company blamed overloaded infrastructure after servers unexpectedly went offline, said it had found no sign of malicious activity, and extended delivery retries for delayed email to 48 hours.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+      "category": "Technology",
+      "publishedAt": "2026-11-12T13:54:00-07:00"
+    },
+    {
+      "id": "2026-11-13-gop-presses-huang-lutnick-testify-nvidia",
+      "headline": "GOP lawmakers push Jensen Huang and Howard Lutnick to appear before Congress amid Nvidia controversy",
+      "summary": "The Republican chairs of three House committees asked former Nvidia CEO Jensen Huang to sit for a closed-door interview Dec. 1, warning of a subpoena if he does not agree by Friday evening, while Senate Banking Chair Tim Scott sought his testimony and a Senate panel asked Commerce Secretary Howard Lutnick to appear. Huang resigned Thursday over an affair with a former Megaspeed executive U.S. officials suspect of spying for China; critics' claims about Lutnick's oversight of Nvidia chip exports are allegations, not findings.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/jensen-huang-nvidia-congress-testify/",
+      "category": "Business",
+      "publishedAt": "2026-11-12T10:30:00-07:00"
+    },
+    {
+      "id": "2026-11-13-van-hollen-challenges-schumer",
+      "headline": "Chris Van Hollen announces he will challenge Chuck Schumer for Senate majority leader",
+      "summary": "Maryland Democratic Sen. Chris Van Hollen said Thursday he will run against Chuck Schumer to lead the incoming Senate Democratic majority, the most significant challenge to party leadership since last week's midterm wins; Bernie Sanders quickly endorsed him. Schumer, who has led Senate Democrats since 2017, said he has the votes to keep the job, with leadership elections expected early next month.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/chris-van-hollen-challenge-chuck-schumer-senate-majority-leader-democrat/",
+      "category": "Politics",
+      "publishedAt": "2026-11-12T19:10:00-07:00"
+    },
+    {
+      "id": "2026-11-13-october-ppi-wholesale-inflation",
+      "headline": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+      "summary": "The Labor Department's producer price index rose a seasonally adjusted 0.3% in October, a bit below the 0.4% economists expected, while core prices excluding food and energy also rose 0.3%. The annual wholesale inflation rate climbed to 6.5%, the highest since November 2022, and CNBC reports the Federal Reserve still appears on track to raise interest rates soon.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+      "category": "Economy",
+      "publishedAt": "2026-11-13T06:31:00-07:00"
+    },
+    {
+      "id": "2026-11-13-trump-cuba-military-force",
+      "headline": "Trump says he wants to 'get Cuba done' before leaving office, would consider military force",
+      "summary": "In a Thursday radio interview with Hugh Hewitt, President Trump called Cuba a \"failed\" state, said he wants to \"get Cuba done\" before leaving office in 2029, and said he would \"certainly consider\" a short military operation. The remarks, which Politico described as his first timeline for possible intervention, come as tightened U.S. sanctions deepen fuel shortages and blackouts on the island; no military action has been announced.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
+      "category": "World",
+      "publishedAt": "2026-11-13T05:28:00-07:00"
+    },
+    {
+      "id": "2026-11-13-dc-logan-circle-gym-shooting",
+      "headline": "Social media account linked to D.C. shooter complained of disrepair, invoked man who killed healthcare CEO",
+      "summary": "A gunman opened fire Thursday morning in the gym of a luxury condo building in Washington's Logan Circle neighborhood, killing building manager James Stuart, 46, and wounding five others before killing himself after a standoff, police said. Police identified the shooter as Dr. Matt Lambert, 55; an X account CBS News linked to him had complained for months about mold and water damage in his unit and referenced Luigi Mangione.",
+      "sourceName": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/dc-shooting-gunman-social-media/",
+      "category": "National",
+      "publishedAt": "2026-11-12T13:42:00-07:00"
+    },
+    {
+      "id": "2026-11-13-knowles-fire-federal-report",
+      "headline": "New 102-page federal report details what went wrong in Colorado wildfire that killed 4 firefighters",
+      "summary": "The Interior Department's final report on the June Knowles fire near Grand Junction found that extreme fire behavior, strained communications, understaffing and gaps in aerial supervision combined to trap four federal firefighters who died after being overrun by the faster-moving Snyder fire. Investigators said no single failure explains the deaths, while one firefighter's mother said she believes leadership and oversight failures caused her son's death.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/12/knowles-snyder-fire-report-firefighters-killed/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T14:23:50-07:00"
+    },
+    {
+      "id": "2026-11-13-milton-banks-denver-police-custody-homicide-ruling",
+      "headline": "Coroner rules death of man in Denver police custody homicide; medical examiner says ruling does not mean murder",
+      "summary": "Denver's medical examiner ruled the July death of Milton Banks, 42, a homicide, finding he had a heart attack after a prolonged struggle and restraint by police, with a synthetic cannabinoid a significant contributing factor; a paramedic had also given him the sedative Versed. Banks was arrested July 14 after police said he assaulted a driver and tried to carjack the vehicle on East Colfax; the chief medical examiner said the ruling is not a finding of criminal wrongdoing.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/coroner-rules-death-of-man-denver-police-custody-homicide-medical-examiner-says-ruling-does-not-mean-murder/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T22:34:00-07:00"
+    },
+    {
+      "id": "2026-11-13-avalanche-mackinnon-makar-injured",
+      "headline": "Nathan MacKinnon, Cale Makar both exit early with injuries in Colorado Avalanche overtime loss to Ottawa Senators",
+      "summary": "Avalanche stars Nathan MacKinnon and Cale Makar both left Thursday's game in Ottawa in the second period with lower-body injuries and did not return as Colorado lost 4-3 in overtime. Coach Jared Bednar gave no update on their status after the game; the Avs play next in Montreal on Saturday.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/nathan-mackinnon-cale-makar-both-injuries-colorado-avalanche-overtime-loss-ottawa-senators/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T21:34:00-07:00"
+    },
+    {
+      "id": "2026-11-13-i70-georgetown-10-vehicle-crash",
+      "headline": "Eastbound I-70 reopens following 10-vehicle crash that left several injured, including 2 Clear Creek deputies",
+      "summary": "A semi-truck driver went through a road closure on eastbound I-70 near Georgetown late Thursday morning and set off a 10-vehicle pileup that included three Clear Creek County sheriff's patrol vehicles diverting traffic around another semi fire, the Colorado State Patrol said. Nine people were hurt; St. Anthony Hospital reported two patients in critical condition, and the two hospitalized deputies had minor injuries and were released.",
+      "sourceName": "Denver7",
+      "sourceUrl": "https://www.denver7.com/news/local-news/two-clear-creek-county-deputies-taken-to-hospital-10-vehicles-involved-in-eastbound-i-70-crash-thursday",
+      "category": "Colorado",
+      "publishedAt": "2026-11-12T15:08:00-07:00"
+    }
+  ]
+}
