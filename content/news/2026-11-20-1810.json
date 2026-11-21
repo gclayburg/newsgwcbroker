@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-20",
+  "title": "Evening Briefing — November 20, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from Friday and the days since the last edition.",
+  "intro": "Six national and four Colorado stories, as of about 6:10 p.m. Mountain Time on Friday, Nov. 20, ranked by prominence across reputable outlets. Two are carried forward under the same ids and updated: the Senate Democratic leadership contest, still set for a Dec. 1 vote, and the Colorado ICE detention fight, now a contempt ruling. Judge Brinkema said from the bench that she would block the proposed arch, and the Justice Department said it will appeal. President Trump's data-center tax comments are a stated intention, not an enacted rule, and Sen. Chuck Schumer's claim that he already has the votes is his assertion before the secret ballot. Five stories have no photo: the arch image was blocked, the permitting and Iran items had no usable news photograph, the leadership page was blocked, and the flood photograph could not be downloaded.",
+  "publishedAt": "2026-11-20T18:10:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-20-judge-blocks-trump-dc-arch",
+      "headline": "Second judge says she will block Trump's triumphal arch near Arlington indefinitely",
+      "summary": "U.S. District Judge Leonie Brinkema said Friday she would grant Arlington County a preliminary injunction blocking President Trump's proposed 250-foot arch at Memorial Circle, on the Virginia side of the Potomac near Arlington National Cemetery and Reagan National Airport, while the county's lawsuit proceeds. She said she did not see any way for the government to win on the merits, called the project a \"rushed job,\" and said it lacks congressional approval. The order goes further than Judge Tanya Chutkan's pause on groundbreaking through Dec. 3. A Justice Department spokesperson told NPR the government will appeal immediately.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/20/nx-s1-6048675/trump-arch-blocked-arlington",
+      "category": "Politics",
+      "publishedAt": "2026-11-20T11:25:00-07:00"
+    },
+    {
+      "id": "2026-11-20-trump-threatens-overseas-data-center-tax",
+      "headline": "Trump threatens a 'tremendous tax' if U.S. firms build data centers abroad",
+      "summary": "President Trump said Friday at the White House that U.S. companies will be banned from building data centers in other countries and will face a \"tremendous tax\" if they do, then added that they can still build overseas but will be taxed. He told reporters he had not yet mentioned the idea to his own staff. CNBC noted that Alphabet, Amazon, Microsoft, Meta and Oracle have already built data centers in other countries. The remarks describe an intention, not an enacted tax or ban. In a CNBC survey, 64% of registered voters opposed an AI data center within 10 miles of their home.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+      "category": "Economy",
+      "publishedAt": "2026-11-20T10:45:38-07:00",
+      "image": {
+        "file": "2026-11-20-trump-threatens-overseas-data-center-tax.webp",
+        "alt": "President Trump speaking at a White House podium, with an American flag and another official behind him",
+        "caption": "president Trump speaking during a press briefing in the Brady Briefing Room of the White House in Washington on Nov. 20, 2026.",
+        "credit": "AFP via Getty Images, via CNBC."
+      }
+    },
+    {
+      "id": "2026-11-19-senate-passes-permitting-reform",
+      "headline": "Senate passes bipartisan permitting bill, with Schumer among the Democratic yes votes",
+      "summary": "The Senate voted 62-33 Thursday to pass the Bipartisan American Affordability and Jobs Act, which would speed environmental reviews and electricity transmission and require large data centers to pay more of the grid upgrades they trigger. The vote split Democrats weeks after their midterm gains: more voted no than yes, but more than a dozen, including Minority Leader Chuck Schumer, voted yes. Sens. Shelley Moore Capito, Sheldon Whitehouse, Mike Lee and Martin Heinrich wrote the bill. It still needs the House. Supporters say it will cut power costs; opponents, including the Natural Resources Defense Council, say it weakens environmental law and helps fossil fuels and data centers.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+      "category": "Politics",
+      "publishedAt": "2026-11-19T20:30:45-07:00"
+    },
+    {
+      "id": "2026-11-19-senate-blocks-iran-war-powers",
+      "headline": "Senate rejects a Democratic effort to end the U.S. war in Iran",
+      "summary": "Senate Republicans on Thursday blocked a Democratic effort to end the U.S. war in Iran, the chamber's first vote on the conflict since Republicans' midterm losses, the Associated Press reported. The war-powers measure failed 48-51. The Republican-led House had passed the same resolution in September. The AP described the effort as mostly symbolic after Democrats, led by Sen. Tim Kaine, forced repeated votes on the war this year.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/iran-war-trump-senate-war-powers-bcbb331cd6c847bf5d0bcb7446344714",
+      "category": "World"
+    },
+    {
+      "id": "2026-11-20-palisades-fire-arson-verdict",
+      "headline": "Federal jury convicts man of starting the deadly 2025 Palisades Fire",
+      "summary": "A Los Angeles federal jury on Friday convicted Jonathan Rinderknecht, 30, on both arson counts in the January 2025 Palisades Fire, after a first trial ended in a mistrial in June when jurors split 10-2 for acquittal. Prosecutors said the former Uber driver set the small Lachman Fire on New Year's Day, which smoldered underground and reignited a week later. The Los Angeles Fire Department said the blaze burned 23,448 acres, killed 12 people and destroyed 6,837 structures. Sentencing is set for March 17. Prosecutors said he faces five to 40 years in prison.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/pacific-palisades-fire-retrial-jonathan-rinderknecht-rcna610336",
+      "category": "National",
+      "publishedAt": "2026-11-20T18:00:53-07:00",
+      "image": {
+        "file": "2026-11-20-palisades-fire-arson-verdict.webp",
+        "alt": "Burned trees, a destroyed house frame and charred vehicles along a street after a wildfire",
+        "caption": "file photo of charred structures and vehicles after the Palisades Fire in Pacific Palisades, Calif., on Jan. 8, 2025.",
+        "credit": "Agustin Paullier/AFP via Getty Images, via NBC News."
+      }
+    },
+    {
+      "id": "2026-11-13-van-hollen-challenges-schumer",
+      "headline": "Schumer says he has the votes to defeat Van Hollen for Senate Democratic leader",
+      "summary": "Senate Democratic Leader Chuck Schumer said Tuesday that he has locked up the votes to beat Sen. Chris Van Hollen and lead the incoming majority, telling reporters after a caucus lunch, \"I'm confident I'll be the next leader.\" The secret ballot is still set for Dec. 1. The Hill reported that Schumer's allies predict more than 40 votes, while Van Hollen says he has 15, though only four Democrats who can vote on Dec. 1 had said so publicly. Those figures are claims and predictions, not a completed election. Van Hollen announced the challenge on Nov. 12.",
+      "sourceName": "The Hill",
+      "sourceUrl": "https://thehill.com/homenews/senate/6226192-schumer-vs-van-hollen-leadership-race/",
+      "category": "Politics",
+      "publishedAt": "2026-11-17T13:23:00-07:00"
+    },
+    {
+      "id": "2026-11-10-ice-rearrests-judge-weighs-contempt",
+      "headline": "Colorado judge holds ICE in contempt for re-arresting people courts ordered freed",
+      "summary": "U.S. District Judge Charlotte Sweeney on Wednesday held Immigration and Customs Enforcement officials in contempt for re-detaining immigrants moments after judges ordered them released, writing that the practice \"made a mockery\" of those orders. At least 18 people in Colorado were held too long or re-arrested within minutes over about six weeks. Sweeney imposed no fine after officials testified they had stopped, and she warned that further violations could bring stronger sanctions. In the case before her, Ramon Quintero Alvarez was freed and immediately detained again, which the judge said was unlawful.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/colorado-judge-holds-ice-in-contempt-for-rearresting-immigrants-ordered-freed/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T03:29:00-07:00",
+      "image": {
+        "file": "2026-11-10-ice-rearrests-judge-weighs-contempt.webp",
+        "alt": "Close-up of a tactical vest with a patch that reads Police ICE",
+        "caption": "file photo of an Immigration and Customs Enforcement agent during an operation in Park Ridge, Ill., on Sept. 19, 2025.",
+        "credit": "Erin Hooley/AP, via The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-20-colorado-flood-relief-request",
+      "headline": "Polis asks for $28.5 million more in federal aid for southern Colorado floods",
+      "summary": "Gov. Jared Polis on Friday requested $28.5 million in federal disaster aid for southern Colorado communities hit by floods in late October and early November, and he said the damage tally will rise. An earlier request, filed Oct. 31 for almost $27 million from the first storm, is still pending. As of Tuesday, counties reported 116 homes destroyed and 155 damaged; about 460 homes were still inaccessible and more than 3,000 people were under boil-water orders. The new request seeks household help in Archuleta, Conejos, La Plata and Rio Grande counties, and public repairs in those counties plus Mineral and Montezuma. President Trump denied a Colorado flood request last year.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/20/colorado-federal-flood-relief-second-request/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-20T11:38:00-07:00"
+    },
+    {
+      "id": "2026-11-19-kirkmeyer-sues-amendment-87",
+      "headline": "Republican senators sue to block Colorado's new graduated income tax",
+      "summary": "State Sens. Barbara Kirkmeyer and Byron Pelton, backed by the conservative group Advance Colorado, sued Thursday to stop Amendment 87, which voters approved this month to replace Colorado's flat 4.4% income tax with rates that rise with income. The suit argues the measure violates the Taxpayer's Bill of Rights because it both raises taxes and deletes the single-rate rule, and should have been two ballot questions. The state Title Board and the Colorado Supreme Court previously allowed it on the ballot. The Colorado Sun reports it is expected to raise more than $2 billion a year for education, child care and health care, with higher taxes above about $500,000. It would apply beginning in 2027.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/amendment-87-lawsuit-advance-colorado-barbara-kirkmeyer-income-tax/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T16:37:46-07:00",
+      "image": {
+        "file": "2026-11-19-kirkmeyer-sues-amendment-87.webp",
+        "alt": "A woman speaking to a crowd holding blue and green Yes on 87 signs outside a building",
+        "caption": "state Rep. Lorena Garcia speaking to supporters at a rally for Amendment 87 in Denver on Nov. 5, 2026.",
+        "credit": "Brian Eason, The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-20-pera-caps-investment-bonuses",
+      "headline": "PERA board votes to cap investment-staff bonuses after public pressure",
+      "summary": "Colorado's public-pension board voted 11-5 Friday to drop a 2018 policy that aimed to pay investment staff more than most public and private peers. Executive director Andrew Roth said he would then cap top investment officials at 150% of salary in incentive pay, down from 225%, and lower-level analysts at 50% to 100%, down from 75% to 150%. Several yes votes were reluctant, with members saying they feared the legislature would cut deeper if the board did not act. The board could defer bonuses for 12 months after a losing year, but not cancel them. State Sen. Chris Kolker has proposed banning bonuses in years the fund loses money.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/20/colorado-pera-board-limits-bonus-pay-investment-staff/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-20T17:25:59-07:00",
+      "image": {
+        "file": "2026-11-20-pera-caps-investment-bonuses.webp",
+        "alt": "PERA board members seated around a curved desk in a hearing room, with a compensation slide on a screen",
+        "caption": "the Colorado PERA board meeting at its Denver headquarters on Nov. 20, 2026.",
+        "credit": "Brian Eason, The Colorado Sun."
+      }
+    }
+  ]
+}
