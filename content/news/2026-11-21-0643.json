@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-21",
+  "title": "Morning Briefing — November 21, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national stories and four Colorado stories, as of about 6:43 a.m. Mountain Time on Saturday, Nov. 21. Three are carried forward under the same ids: the Arlington arch case, the Colorado ICE contempt ruling, and the Amendment 87 lawsuit. Four stories have no photo: the Nvidia item used a logo, the Ukraine and measles photographs were not available as usable news images, and the arch image remained blocked.",
+  "publishedAt": "2026-11-21T06:43:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-21-ai-market-selloff",
+      "headline": "AI stocks drag Wall Street into one of its worst weeks since 2020",
+      "summary": "The Nasdaq fell 10% for the week, its worst week since the March 2020 lockdowns, and the S&P 500 and Dow closed Friday in a correction, 10% below recent highs, NPR reported. Anthropic rose 17% on its debut, then fell more than 8% Friday to finish near its IPO price. NPR tied the drop to costlier borrowing after the Federal Reserve's September rate increase, a new Democratic Congress skeptical of data centers, and Nvidia's turmoil after Jensen Huang resigned this month. Haverford Trust strategist Hank Smith told NPR he does not expect a quick bounce and that the AI trade could stay out of favor into next year. Nvidia still posted strong results, NPR noted, even as circular financing among chipmakers and data-center builders has raised fears of a wider shock.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+      "category": "Markets",
+      "publishedAt": "2026-11-21T03:00:00-07:00",
+      "image": {
+        "file": "2026-11-21-ai-market-selloff.webp",
+        "alt": "A trader in a blue jacket with an American flag patch works at a keyboard on a stock exchange floor",
+        "caption": "a trader at work on the floor of the New York Stock Exchange during a steep sell-off in AI-related shares.",
+        "credit": "Spencer Platt/Getty Images, via NPR."
+      }
+    },
+    {
+      "id": "2026-11-20-nvidia-sec-accounting",
+      "headline": "Nvidia shares slide as Reuters says the SEC is examining its accounting",
+      "summary": "Nvidia closed Friday at $125.53, down about 14% for the week and about 46% over seven straight weekly declines, The Verge reported, citing CNBC. The slide began before Jensen Huang's resignation and deepened after Reuters reported that two people said Securities and Exchange Commission enforcement staff are looking at possible accounting issues at the company. The Verge said that account came from unidentified sources. Nvidia and the SEC had not, in the reporting The Verge cited, confirmed the scope of any inquiry.",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1039305/nvda-down-sec-investigation-accounting",
+      "category": "Markets",
+      "publishedAt": "2026-11-20T16:00:00-07:00"
+    },
+    {
+      "id": "2026-11-21-kryvyi-rih-missile-strike",
+      "headline": "Russian strike on Zelenskyy's hometown kills two, including a child",
+      "summary": "A Russian attack on the center of Kryvyi Rih, President Volodymyr Zelenskyy's hometown in central Ukraine, killed two people and wounded 60, local officials told the Associated Press on Saturday. A 7-year-old boy and a 20-year-old woman were killed in the Friday-night strike, Oleksandr Vilkul, the head of the city's defense council, said. Separately, Finnish and Russian officials said a Russian cargo ship bound for Kaliningrad caught fire in the Gulf of Finland on Saturday after it was hit by drones. The crew was being evacuated. Finland's prime minister warned that the war was spilling into the region.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/russia-ukraine-war-missile-zelenskyy-trump-bfdee2ffadc2693e7338d6822e5356ef",
+      "category": "World"
+    },
+    {
+      "id": "2026-11-21-cop31-climate-overtime",
+      "headline": "U.N. climate talks in Turkey run into Saturday with fossil fuels still disputed",
+      "summary": "Negotiators at the COP31 summit in Antalya went into an extra day on Saturday after missing a Friday finish, the Associated Press reported, with little expectation that the added time would produce a concrete plan to cut fossil fuel use. The two-week meeting drew sharp criticism because a draft of the final agreement did not mention fossil fuels. The document is meant to set out how governments will respond to warming that is driving heat waves and floods. Venue crews had already begun packing up as talks continued.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/cop31-un-turkey-climate-change-global-warming-b54eebcade92e5ee4c513b9a5b2192a7",
+      "category": "World",
+      "publishedAt": "2026-11-21T05:23:00-07:00",
+      "image": {
+        "file": "2026-11-21-cop31-climate-overtime.webp",
+        "alt": "Blurred attendees walk past a wall sign reading COP31 Turkiye Antalya",
+        "caption": "attendees walking past a sign for the COP31 climate summit in Antalya, Turkey, on Nov. 20, 2026.",
+        "credit": "Khalil Hamra/AP."
+      }
+    },
+    {
+      "id": "2026-11-20-us-measles-cases-climb",
+      "headline": "U.S. measles cases reach 5,838 in the first count since elimination status was lost",
+      "summary": "The Centers for Disease Control and Prevention counted 5,838 confirmed measles cases as of Nov. 19, up 426 from the prior week, Contagion Live reported. That is the first weekly total since the Pan American Health Organization on Nov. 17 withdrew the elimination status the United States had held since 2000, after the same virus lineage circulated for at least 12 months. The CDC said 5,820 of the cases were reported by 47 jurisdictions, including Colorado, and 18 were in international visitors. About 96% of confirmed cases were tied to outbreaks. Hospitalization and death tables had not yet been updated to the new case total; the prior tables, covering 5,412 cases, listed 591 hospitalizations and 6 deaths in 2026.",
+      "sourceName": "Contagion Live",
+      "sourceUrl": "https://www.contagionlive.com/view/measles-update-november-20-2026",
+      "category": "Health"
+    },
+    {
+      "id": "2026-11-20-judge-blocks-trump-dc-arch",
+      "headline": "Second judge says she will block Trump's triumphal arch near Arlington indefinitely",
+      "summary": "U.S. District Judge Leonie Brinkema said Friday she would grant Arlington County a preliminary injunction blocking President Trump's proposed 250-foot arch at Memorial Circle, on the Virginia side of the Potomac near Arlington National Cemetery and Reagan National Airport, while the county's lawsuit proceeds. She said she did not see any way for the government to win on the merits, called the project a \"rushed job,\" and said it lacks congressional approval. The order goes further than Judge Tanya Chutkan's pause on groundbreaking through Dec. 3. A Justice Department spokesperson told NPR the government will appeal immediately.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/20/nx-s1-6048675/trump-arch-blocked-arlington",
+      "category": "Politics",
+      "publishedAt": "2026-11-20T11:25:00-07:00"
+    },
+    {
+      "id": "2026-11-21-wolf-creek-pass-reopens",
+      "headline": "Wolf Creek Pass reopens Saturday after flood damage, with long delays",
+      "summary": "The Colorado Department of Transportation said U.S. 160 over Wolf Creek Pass would reopen to through traffic at 7 a.m. Saturday after severe flooding around Pagosa Springs, KOAA reported. Colorado 151 is expected to open early next week, cutting a three-and-a-half-hour detour through New Mexico for drivers between Pagosa Springs and Durango. Executive director Shoshana Lew said the reopening gives essential services and visitors direct access again to communities that depend on year-round tourism. Crews will keep making repairs as weather allows, with single-lane alternating traffic and full stops at a few locations until reconstruction in the spring. U.S. 160 remains closed at the collapsed Piedra River bridge.",
+      "sourceName": "KOAA",
+      "sourceUrl": "https://www.koaa.com/news/local-news/u-s-160-wolf-creek-pass-and-co-151-to-reopen-fully-on-saturday-after-severe-flooding-damage",
+      "category": "Colorado",
+      "image": {
+        "file": "2026-11-21-wolf-creek-pass-reopens.webp",
+        "alt": "Aerial view of a truck crossing a damaged mountain highway cut into a rocky slope above a gorge",
+        "caption": "traffic on a repaired stretch of flood-damaged highway in southwestern Colorado ahead of the Wolf Creek Pass reopening.",
+        "credit": "KOAA."
+      }
+    },
+    {
+      "id": "2026-11-19-colorado-drops-ag-conservation",
+      "headline": "Colorado drops farmers from its 2027 river-conservation plan",
+      "summary": "The Colorado Water Conservation Board on Wednesday walked back a September plan to pay farmers and ranchers, along with other users, to use less Colorado River water in 2027. The $100 million Bureau of Reclamation program was meant to store savings in Lake Powell or three other reservoirs only if that water would not trigger extra releases to California, Arizona and Nevada. A Nov. 10 letter from Interior's Andrea Travnicek said no basin water is treated that way and that operations will follow actual reservoir levels until the seven states agree. Interstate chief Amy Ostdiek said it is too late for irrigators to enroll without that certainty. Utah and Wyoming are still including agriculture. The board may consider a smaller nonfarm program in January.",
+      "sourceName": "Aspen Journalism",
+      "sourceUrl": "https://aspenjournalism.org/colorado-again-balks-at-meaningful-water-conservation/",
+      "category": "Colorado",
+      "image": {
+        "file": "2026-11-19-colorado-drops-ag-conservation.webp",
+        "alt": "A green metal gate stands in a flooded hay field with horses and dry hills behind it",
+        "caption": "a flood-irrigated field near Kremmling, where agricultural water use is central to Colorado River conservation talks.",
+        "credit": "Heather Sackett/Aspen Journalism."
+      }
+    },
+    {
+      "id": "2026-11-10-ice-rearrests-judge-weighs-contempt",
+      "headline": "Colorado judge holds ICE in contempt for re-arresting people courts ordered freed",
+      "summary": "U.S. District Judge Charlotte Sweeney on Wednesday held Immigration and Customs Enforcement officials in contempt for re-detaining immigrants moments after judges ordered them released, writing that the practice \"made a mockery\" of those orders. At least 18 people in Colorado were held too long or re-arrested within minutes over about six weeks. Sweeney imposed no fine after officials testified they had stopped, and she warned that further violations could bring stronger sanctions. In the case before her, Ramon Quintero Alvarez was freed and immediately detained again, which the judge said was unlawful.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/colorado-judge-holds-ice-in-contempt-for-rearresting-immigrants-ordered-freed/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T03:29:00-07:00",
+      "image": {
+        "file": "2026-11-10-ice-rearrests-judge-weighs-contempt.webp",
+        "alt": "Close-up of a tactical vest with a patch that reads Police ICE",
+        "caption": "file photo of an Immigration and Customs Enforcement agent during an operation in Park Ridge, Ill., on Sept. 19, 2025.",
+        "credit": "Erin Hooley/AP, via The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-19-kirkmeyer-sues-amendment-87",
+      "headline": "Republican senators sue to block Colorado's new graduated income tax",
+      "summary": "State Sens. Barbara Kirkmeyer and Byron Pelton, backed by the conservative group Advance Colorado, sued Thursday to stop Amendment 87, which voters approved this month to replace Colorado's flat 4.4% income tax with rates that rise with income. The suit argues the measure violates the Taxpayer's Bill of Rights because it both raises taxes and deletes the single-rate rule, and should have been two ballot questions. The state Title Board and the Colorado Supreme Court previously allowed it on the ballot. The Colorado Sun reports it is expected to raise more than $2 billion a year for education, child care and health care, with higher taxes above about $500,000. It would apply beginning in 2027.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/amendment-87-lawsuit-advance-colorado-barbara-kirkmeyer-income-tax/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T16:37:46-07:00",
+      "image": {
+        "file": "2026-11-19-kirkmeyer-sues-amendment-87.webp",
+        "alt": "A woman speaking to a crowd holding blue and green Yes on 87 signs outside a building",
+        "caption": "state Rep. Lorena Garcia speaking to supporters at a rally for Amendment 87 in Denver on Nov. 5, 2026.",
+        "credit": "Brian Eason, The Colorado Sun."
+      }
+    }
+  ]
+}
