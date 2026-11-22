@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-22",
+  "title": "Morning Briefing — November 22, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories from overnight and the past day.",
+  "intro": "Six national stories and four Colorado stories, as of about 7:22 a.m. Mountain Time on Sunday, Nov. 22. Three are carried forward under the same ids: the week's AI stock sell-off, the Colorado ICE contempt ruling, and the Amendment 87 lawsuit. The climate item is the same COP31 summit, updated after the talks ended without a deal. Three stories have no photo: the FBI image was a stock picture of the bureau's building, and the shutdown and Roundup stories had no usable news photograph.",
+  "publishedAt": "2026-11-22T07:22:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-21-cop31-climate-overtime",
+      "headline": "U.N. climate talks end with no deal after countries reject a text that skips fossil fuels",
+      "summary": "Countries at the COP31 summit in Antalya closed Sunday without an overarching agreement after the European Union, Panama and small island states rejected a draft that did not mention fossil fuels, Politico reported. Turkish COP31 president Murat Kurum said there was no consensus, so those decisions were not adopted. Irish Climate Minister Darragh O'Brien, speaking for the EU, said the bloc would not accept a text with no reference to moving away from fossil fuels. Politico said it was the first time in 17 years the talks had failed to reach an agreement. Some required decisions were finished; others wait until next year's summit in Ethiopia. The rejected draft called for 35% of global energy use to be electrified by 2035, up from 23% today, without requiring the new power to be clean.",
+      "sourceName": "Politico",
+      "sourceUrl": "https://www.politico.eu/article/climate-deal-collapses-amid-fossil-fuel-rows/",
+      "category": "World",
+      "publishedAt": "2026-11-22T06:00:00-07:00",
+      "image": {
+        "file": "2026-11-21-cop31-climate-overtime-2.webp",
+        "alt": "Murat Kurum seated at a desk labeled COP President, with other officials around him at the COP31 summit",
+        "caption": "COP31 president Murat Kurum, seated at center, during the closing plenary in Antalya, Turkey, on Nov. 22, 2026.",
+        "credit": "Khalil Hamra/AP."
+      }
+    },
+    {
+      "id": "2026-11-22-dymer-apartment-strike",
+      "headline": "Russian drone strike collapses an apartment building near Kyiv, killing two",
+      "summary": "A Russian drone strike on Sunday destroyed part of a five-story apartment building in Dymer, north of Kyiv, Euronews reported. Tymur Tkachenko, head of the Kyiv regional military administration, said rescuers had recovered two bodies and that at least four people were injured. Ukraine's national police said 15 people were missing, including an 11-year-old girl and a 7-year-old boy, and that the search was continuing. The strike followed a Thursday-into-Friday barrage that President Volodymyr Zelenskyy called one of the largest of the war, which killed at least seven people in Kyiv. On Sunday he said Russia had launched about 2,700 drones, close to 1,460 aerial bombs and 165 missiles at 20 regions this week.",
+      "sourceName": "Euronews",
+      "sourceUrl": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "category": "World",
+      "publishedAt": "2026-11-22T05:36:00-07:00",
+      "image": {
+        "file": "2026-11-22-dymer-apartment-strike.webp",
+        "alt": "Firefighters in helmets stand on smoking rubble of a collapsed apartment building",
+        "caption": "rescue workers on the rubble of an apartment building in Dymer, north of Kyiv, after a Russian drone strike on Nov. 22, 2026.",
+        "credit": "State Emergency Service of Ukraine, via the Kyiv Independent."
+      }
+    },
+    {
+      "id": "2026-11-21-fbi-ncic-database-hack",
+      "headline": "Trump says the FBI's national crime database was hacked, then points to 2016",
+      "summary": "President Trump said in a Saturday Fox News interview that the FBI's National Crime Information Center was targeted in a hack, ABC News reported. He said the intrusion was not good and that he did not like it. A law enforcement source confirmed to ABC that the database was hacked. The FBI declined to comment, and ABC said the perpetrators and the scale of the breach were still unclear. The system holds criminal histories, fugitive records, stolen-property reports and missing-person data used by federal, state and local agencies. Trump then suggested, without offering evidence, that the hack might reveal material tied to the investigation of Russian interference in the 2016 election. ABC noted the NCIC would not contain those investigative files.",
+      "sourceName": "ABC News",
+      "sourceUrl": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810",
+      "category": "National",
+      "publishedAt": "2026-11-21T19:05:00-07:00"
+    },
+    {
+      "id": "2026-11-20-iran-funding-shutdown-risk",
+      "headline": "Congress nears a Dec. 11 funding deadline still split over the Iran war",
+      "summary": "Congress has until Dec. 11 to keep the government open, and divisions over the Iran war and President Trump's demand for $350 billion in new Pentagon spending could still produce a shutdown before Christmas, Reuters reported Friday. A funding bill needs 60 Senate votes. Democrats are split over whether to insist on limits on war spending. Sen. Peter Welch called it a Gordian knot: they do not want to fund the war, and they do not want a shutdown. Rep. Rosa DeLauro said shutting the government down would not stop the war. Majority Leader John Thune said Friday that talks were underway but there was no deal. Republicans turned, for now, to bipartisan talks on a $1.1 trillion defense bill that includes $69 billion of Trump's request.",
+      "sourceName": "The Spokesman-Review",
+      "sourceUrl": "https://www.spokesman.com/stories/2026/nov/20/congress-struggles-to-avert-us-shutdown-as-iran-wa/",
+      "category": "Politics",
+      "publishedAt": "2026-11-20T19:57:00-07:00"
+    },
+    {
+      "id": "2026-11-21-ai-market-selloff",
+      "headline": "AI stocks drag Wall Street into one of its worst weeks since 2020",
+      "summary": "The Nasdaq fell 10% for the week, its worst week since the March 2020 lockdowns, and the S&P 500 and Dow closed Friday in a correction, 10% below recent highs, NPR reported. Anthropic rose 17% on its debut, then fell more than 8% Friday to finish near its IPO price. NPR tied the drop to costlier borrowing after the Federal Reserve's September rate increase, a new Democratic Congress skeptical of data centers, and Nvidia's turmoil after Jensen Huang resigned this month. Haverford Trust strategist Hank Smith told NPR he does not expect a quick bounce and that the AI trade could stay out of favor into next year. Nvidia still posted strong results, NPR noted, even as circular financing among chipmakers and data-center builders has raised fears of a wider shock.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+      "category": "Markets",
+      "publishedAt": "2026-11-21T03:00:00-07:00",
+      "image": {
+        "file": "2026-11-21-ai-market-selloff.webp",
+        "alt": "A trader in a blue jacket with an American flag patch works at a keyboard on a stock exchange floor",
+        "caption": "a trader at work on the floor of the New York Stock Exchange during a steep sell-off in AI-related shares.",
+        "credit": "Spencer Platt/Getty Images, via NPR."
+      }
+    },
+    {
+      "id": "2026-11-20-bayer-roundup-settlement",
+      "headline": "Missouri judge approves Bayer's $7.25 billion Roundup cancer settlement",
+      "summary": "A Missouri judge on Friday approved Bayer's plan to pay as much as $7.25 billion over up to 21 years to people who say the weedkiller Roundup caused non-Hodgkin lymphoma, the BBC reported. Judge Timothy Boyer called the settlement fair, reasonable and adequate. It covers patients who are already ill and those diagnosed in future years, with payments ranging from $10,000 to $165,000 depending on use, age at diagnosis and severity. Bayer denies that Roundup causes cancer and has already paid about $10 billion to resolve earlier U.S. claims. Some lawyers objected that the fund was too small; the judge said he did not want to delay payments to sick people. The BBC said the approval follows a June Supreme Court ruling for Bayer that federal rules do not require a cancer warning on the product.",
+      "sourceName": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/cwvg21gyl650o",
+      "category": "National"
+    },
+    {
+      "id": "2026-11-21-i70-floyd-hill-pileup",
+      "headline": "Snow and a 12-car pileup shut I-70 at Floyd Hill; lanes reopen by late morning",
+      "summary": "Interstate 70 reopened in both directions by 11:30 a.m. Saturday between the western Denver metro area and Idaho Springs after a 12-car pileup in the snow near Floyd Hill, 9NEWS reported. The Colorado State Patrol said the westbound closure began just before 6 a.m. around mile marker 245, and that no injuries were reported. The shutdown was extended to Morrison Road, just west of Lakewood, and eastbound lanes were also closed near Idaho Springs. As troopers tried to reopen the highway, more drivers spun out, including a minor crash involving a fire truck. Westbound U.S. 6 in Golden, Colorado 119 near Rollinsville and westbound U.S. 40 also closed for a time and later reopened.",
+      "sourceName": "9NEWS",
+      "sourceUrl": "https://www.9news.com/article/traffic/westbound-i-70-closed-floyd-hill-snowy/73-f48ce4a5-e8f5-4fa2-8a59-bbafb9c8d74b",
+      "category": "Colorado",
+      "publishedAt": "2026-11-21T18:52:00-07:00",
+      "image": {
+        "file": "2026-11-21-i70-floyd-hill-pileup.webp",
+        "alt": "Cars and a box truck in heavy snow on westbound Interstate 70, under a traffic-camera label for milepost 246",
+        "caption": "traffic on snow-covered westbound Interstate 70 near Floyd Hill on Nov. 21, 2026, where a pileup closed the highway.",
+        "credit": "Colorado Department of Transportation, via 9NEWS."
+      }
+    },
+    {
+      "id": "2026-11-21-city-park-west-condo-fire",
+      "headline": "Early-morning fire leaves five City Park West condos uninhabitable",
+      "summary": "Five of nine condominium units were left uninhabitable after a fire early Saturday in a two-story building in the 1700 block of North Franklin Street in Denver's City Park West neighborhood, KDVR reported. The Denver Fire Department said crews were called around 2 a.m. for a porch fire and arrived within three minutes to flames climbing the rear of the building. They knocked down the heaviest flames in about 10 minutes and kept the fire from spreading to neighboring buildings. The blaze was under control at 2:43 a.m. Several vehicles parked behind the building were damaged. No injuries were reported. The American Red Cross helped residents who had to leave. The cause remains under investigation.",
+      "sourceName": "KDVR",
+      "sourceUrl": "https://kdvr.com/news/local/fire-damages-5-condo-units-in-denvers-city-park-west-neighborhood/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-21T17:33:00-07:00",
+      "image": {
+        "file": "2026-11-21-city-park-west-condo-fire.webp",
+        "alt": "Firefighters in turnout gear work at night beside a brick building lit by red emergency lights",
+        "caption": "firefighters at a condominium building in Denver's City Park West neighborhood after an early-morning fire on Nov. 21, 2026.",
+        "credit": "Denver Fire Department, via KDVR."
+      }
+    },
+    {
+      "id": "2026-11-10-ice-rearrests-judge-weighs-contempt",
+      "headline": "Colorado judge holds ICE in contempt for re-arresting people courts ordered freed",
+      "summary": "U.S. District Judge Charlotte Sweeney on Wednesday held Immigration and Customs Enforcement officials in contempt for re-detaining immigrants moments after judges ordered them released, writing that the practice \"made a mockery\" of those orders. At least 18 people in Colorado were held too long or re-arrested within minutes over about six weeks. Sweeney imposed no fine after officials testified they had stopped, and she warned that further violations could bring stronger sanctions. In the case before her, Ramon Quintero Alvarez was freed and immediately detained again, which the judge said was unlawful.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/colorado-judge-holds-ice-in-contempt-for-rearresting-immigrants-ordered-freed/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T03:29:00-07:00",
+      "image": {
+        "file": "2026-11-10-ice-rearrests-judge-weighs-contempt.webp",
+        "alt": "Close-up of a tactical vest with a patch that reads Police ICE",
+        "caption": "file photo of an Immigration and Customs Enforcement agent during an operation in Park Ridge, Ill., on Sept. 19, 2025.",
+        "credit": "Erin Hooley/AP, via The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-19-kirkmeyer-sues-amendment-87",
+      "headline": "Republican senators sue to block Colorado's new graduated income tax",
+      "summary": "State Sens. Barbara Kirkmeyer and Byron Pelton, backed by the conservative group Advance Colorado, sued Thursday to stop Amendment 87, which voters approved this month to replace Colorado's flat 4.4% income tax with rates that rise with income. The suit argues the measure violates the Taxpayer's Bill of Rights because it both raises taxes and deletes the single-rate rule, and should have been two ballot questions. The state Title Board and the Colorado Supreme Court previously allowed it on the ballot. The Colorado Sun reports it is expected to raise more than $2 billion a year for education, child care and health care, with higher taxes above about $500,000. It would apply beginning in 2027.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/amendment-87-lawsuit-advance-colorado-barbara-kirkmeyer-income-tax/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T16:37:46-07:00",
+      "image": {
+        "file": "2026-11-19-kirkmeyer-sues-amendment-87.webp",
+        "alt": "A woman speaking to a crowd holding blue and green Yes on 87 signs outside a building",
+        "caption": "state Rep. Lorena Garcia speaking to supporters at a rally for Amendment 87 in Denver on Nov. 5, 2026.",
+        "credit": "Brian Eason, The Colorado Sun."
+      }
+    }
+  ]
+}
