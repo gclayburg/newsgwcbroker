@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-23",
+  "title": "Morning Briefing — November 23, 2026",
+  "subtitle": "Nine leading U.S. and Colorado stories for the start of Thanksgiving week.",
+  "intro": "Five national stories and four Colorado stories, as of about 8:01 a.m. Mountain Time on Monday, Nov. 23. Three are carried forward under the same ids: the COP31 talks, the pending federal flood request, and the Amendment 87 lawsuit. Five stories have no photo: the NATO, airport, and contractor images were not a usable news photograph of the event, and the Montrose and flood items had no photo that could be stored.",
+  "publishedAt": "2026-11-23T08:01:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-23-democrats-clinch-house-majority",
+      "headline": "Democrats reach at least 258 House seats, their largest majority since 1992",
+      "summary": "House Democrats secured at least 258 seats on Sunday, matching their 1992 total and their biggest majority since then, after Chuck Hubbard defeated Republican Rep. Virginia Foxx in North Carolina's 5th District. Foxx, first elected in 2004 and chair of the House Rules Committee, said she called Hubbard to concede after a recount. The Associated Press reported Hubbard led by 330 votes out of about 287,000. Four other House races were still uncalled. NPR said Democrats won 56% of the national House vote to Republicans' 42%. NBC News said Trump carried Foxx's district by nearly 18 points in 2024.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/democrats-house-majority-election-2026-congress-721096a4d9ba2cd68683692361798cdb",
+      "category": "Politics",
+      "publishedAt": "2026-11-22T12:42:00-07:00",
+      "image": {
+        "file": "2026-11-23-democrats-clinch-house-majority.webp",
+        "alt": "Chuck Hubbard in a dark suit and blue tie, standing in front of the U.S. Capitol dome",
+        "caption": "Chuck Hubbard at the U.S. Capitol.",
+        "credit": "NBC News."
+      }
+    },
+    {
+      "id": "2026-11-23-poland-calls-nato-meeting-missiles",
+      "headline": "Poland asks NATO for more air defense after Russian missiles land inside its borders",
+      "summary": "NATO's North Atlantic Council was due to meet Monday in Brussels after three objects Polish prosecutors identified as Russian Kh-101 cruise missiles entered Polish airspace Friday and crashed in the southeast during a large Russian attack on western Ukraine. No injuries were reported. Poland did not invoke Article 4. Deputy Defence Minister Pawel Zalewski said Warsaw would ask for stronger eastern-flank defenses, including another AWACS surveillance plane, and called the incursion a provocation. NATO Secretary-General Mark Rutte said allies had not yet decided whether the crossing was intentional.",
+      "sourceName": "Stars and Stripes",
+      "sourceUrl": "https://www.stripes.com/theaters/europe/2026-11-22/poland-russia-nato-missiles-23541547.html",
+      "category": "World"
+    },
+    {
+      "id": "2026-11-23-ice-detains-seattle-airport-pair",
+      "headline": "ICE detains a father and daughter on a Seattle airport jet bridge",
+      "summary": "Immigration and Customs Enforcement arrested Ricardo Larrondo Mendoza and his daughter, Sofia Hernandez Mejia, on Saturday as they boarded an Alaska Airlines flight from Seattle-Tacoma International Airport to Los Angeles. Their lawyer, Olia Catala, said they were traveling to a family baptism, entered the United States on tourist visas in 2015, and that Mendoza has a pending asylum application. ICE said both overstayed their visas and that Hernandez threw hot coffee on officers. Catala and a passenger said agents knocked coffee from someone's hands during the arrest. The Port of Seattle said it was outraged and was checking whether airport protocols were followed. Alaska Airlines said it was not given appropriate notice.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/immigration-arrest-seattle-airport-ice-c2898391e526ebed8472c190e90726d4",
+      "category": "National"
+    },
+    {
+      "id": "2026-11-21-cop31-climate-overtime",
+      "headline": "COP31 ends with no deal after countries reject a text that skips fossil fuels",
+      "summary": "Countries at the COP31 summit in Antalya closed Sunday without an overarching agreement after the European Union and other nations rejected a draft that did not mention fossil fuels. Turkish COP31 president Murat Kurum said there was no consensus. The talks ran two days past schedule, the longest COP on record. Reuters reported that Saudi Arabia led resistance to fossil-fuel language, and Ireland's climate minister, speaking for the EU, said some oil states had hijacked the summit. The Turkish presidency said no country received preferential treatment. The United States was not an active participant after the Trump administration withdrew from the talks.",
+      "sourceName": "Politico",
+      "sourceUrl": "https://www.politico.eu/article/climate-deal-collapses-amid-fossil-fuel-rows/",
+      "category": "World",
+      "publishedAt": "2026-11-22T06:00:00-07:00",
+      "image": {
+        "file": "2026-11-21-cop31-climate-overtime-2.webp",
+        "alt": "Murat Kurum seated at a desk labeled COP President, with other officials around him at the COP31 summit",
+        "caption": "COP31 president Murat Kurum, seated at center, during the closing plenary in Antalya, Turkey, on Nov. 22, 2026.",
+        "credit": "Khalil Hamra/AP."
+      }
+    },
+    {
+      "id": "2026-11-23-trump-orders-contractors-on-oversight",
+      "headline": "Trump orders federal contractors to clear congressional inquiries with the White House",
+      "summary": "President Trump on Friday signed an executive order requiring federal contractors and subcontractors to notify the White House and their contracting agency about congressional requests involving executive-branch work, and to coordinate any response. The order warns that contractors who do not comply could lose current contracts and be barred from future federal work. It says Congress cannot obtain privileged information before the executive branch has a chance to assert privilege. Presidents of both parties have used executive privilege against congressional inquiries. Courts, not the White House alone, decide whether that privilege applies.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/trump-executive-order-congress-oversight-investigation-contractors-9546e1d7acdf3e65b654d1c5162cb0bd",
+      "category": "Politics"
+    },
+    {
+      "id": "2026-11-20-colorado-utility-aid-requests-jump",
+      "headline": "Households seeking help with Colorado utility bills jump 40% from last fall",
+      "summary": "Energy Outreach Colorado said the number of households asking for help with utility bills this fall is up 40% from a year ago. The nonprofit said it is providing about $1 million a week, and that the average household is $750 behind. The Colorado Public Utilities Commission opened an investigation on Nov. 4 after residential shutoffs rose 705%, to 78,300, between 2023 and 2025. Chairman Eric Blank said recent decisions affecting Xcel Energy have been made case by case, without a single look at what customers pay for both gas and electricity. Xcel said it would add $10 million of company money for bill relief.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/20/utility-bills-gas-electricity-energy-outreach-colorado-puc-probe/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-20T04:06:00-07:00",
+      "image": {
+        "file": "2026-11-20-colorado-utility-aid-requests-jump.webp",
+        "alt": "High-voltage transmission lines and power poles above a suburban neighborhood",
+        "caption": "file photo of transmission lines above a suburban neighborhood.",
+        "credit": "The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-20-colorado-flood-relief-request",
+      "headline": "Polis asks for $28.5 million more in federal aid for southern Colorado floods",
+      "summary": "Gov. Jared Polis on Friday requested $28.5 million in federal disaster aid for southern Colorado communities hit by floods in late October and early November, and he said the damage tally will rise. An earlier request, filed Oct. 31 for almost $27 million from the first storm, is still pending. As of Tuesday, counties reported 116 homes destroyed and 155 damaged; about 460 homes were still inaccessible and more than 3,000 people were under boil-water orders. The new request seeks household help in Archuleta, Conejos, La Plata and Rio Grande counties, and public repairs in those counties plus Mineral and Montezuma. President Trump denied a Colorado flood request last year.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/20/colorado-federal-flood-relief-second-request/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-20T11:38:00-07:00"
+    },
+    {
+      "id": "2026-11-19-kirkmeyer-sues-amendment-87",
+      "headline": "Republican senators sue to block Colorado's new graduated income tax",
+      "summary": "State Sens. Barbara Kirkmeyer and Byron Pelton, backed by the conservative group Advance Colorado, sued Thursday to stop Amendment 87, which voters approved this month to replace Colorado's flat 4.4% income tax with rates that rise with income. The suit argues the measure violates the Taxpayer's Bill of Rights because it both raises taxes and deletes the single-rate rule, and should have been two ballot questions. The state Title Board and the Colorado Supreme Court previously allowed it on the ballot. The Colorado Sun reports it is expected to raise more than $2 billion a year for education, child care and health care, with higher taxes above about $500,000. It would apply beginning in 2027.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/19/amendment-87-lawsuit-advance-colorado-barbara-kirkmeyer-income-tax/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-19T16:37:46-07:00",
+      "image": {
+        "file": "2026-11-19-kirkmeyer-sues-amendment-87.webp",
+        "alt": "A woman speaking to a crowd holding blue and green Yes on 87 signs outside a building",
+        "caption": "state Rep. Lorena Garcia speaking to supporters at a rally for Amendment 87 in Denver on Nov. 5, 2026.",
+        "credit": "Brian Eason, The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-22-montrose-county-limits-wolf-releases",
+      "headline": "Montrose County adopts a narrower ordinance aimed at wolf releases",
+      "summary": "Montrose County commissioners this week approved an ordinance that bars introducing, transporting or releasing non-native wildlife, including wolves, without the approvals the measure requires. It drops a 2025 draft's $1,000-a-day fine and instead lets the county go to court. A wolf that crosses the county line on its own is not a violation, and the text says it should be read consistently with state and federal law. Colorado voters approved wolf reintroduction in 2020; about 76% of Montrose County voters opposed it. Colorado Parks and Wildlife said that vote remains state policy and that it will keep working with counties.",
+      "sourceName": "Colorado Public Radio",
+      "sourceUrl": "https://www.cpr.org/2026/11/22/montrose-county-non-native-species-ordinance-wolves/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-22T04:00:00-07:00"
+    }
+  ]
+}
