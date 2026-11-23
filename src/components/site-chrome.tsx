@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   AddHandleButton,
   CopyLinkButton,
+  OpenHandleButton,
   PrintButton,
   ThemeToggle,
 } from "@/components/header-actions";
@@ -38,6 +39,7 @@ export function SiteHeader() {
           <PrintButton />
           <CopyLinkButton />
           <AddHandleButton />
+          <OpenHandleButton />
           <ThemeToggle />
         </nav>
       </div>
