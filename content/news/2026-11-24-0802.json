@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "title": "Morning Briefing — November 24, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories for Tuesday of Thanksgiving week.",
+  "intro": "Six national stories and four Colorado stories, as of about 8:02 a.m. Mountain Time on Tuesday, Nov. 24. The southern Colorado flood request is carried forward under the same id. Five stories have no photo: the bird-flu report, the SpaceX lawsuit, Rep. Gomez's resignation, the jobs figures, and the flood request had no usable news photograph that could be stored. The Huang image is a file photo from an earlier meeting.",
+  "publishedAt": "2026-11-24T08:02:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-24-huang-returns-nvidia-ceo",
+      "headline": "Trump takes credit as Nvidia brings Jensen Huang back as chief executive",
+      "summary": "Nvidia reinstated Jensen Huang as chief executive on Monday, two weeks after he resigned amid reports of extramarital affairs, including one with a woman U.S. officials suspected of spying for China. President Trump said he intervened and posted that the return posed no national security risk. Huang told employees in Santa Clara he would be a better chief executive the second time. NPR said Nvidia shares jumped more than 30%. Sen. John Cornyn questioned the security claim, and Sen. Chuck Schumer accused Trump of putting financial interests ahead of security. Huang is still due for a closed House interview on Dec. 1 and Senate Banking testimony two days later.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/congress-huang-nvidia-return-army-iowa-detonation-morning-rundown-rcna611054",
+      "category": "Business",
+      "publishedAt": "2026-11-24T05:05:00-07:00",
+      "image": {
+        "file": "2026-11-24-huang-returns-nvidia-ceo.webp",
+        "alt": "Jensen Huang in a dark suit shaking hands with President Trump, who is wearing a blue suit and light blue tie, outdoors with other people nearby",
+        "caption": "file photo of Jensen Huang greeting President Trump.",
+        "credit": "NBC News."
+      }
+    },
+    {
+      "id": "2026-11-24-army-iowa-lead-detonation",
+      "headline": "Army will detonate unstable lead explosives in Iowa on Wednesday",
+      "summary": "The Army said Monday night it will carry out a controlled detonation Wednesday morning of 68 drums of deteriorating lead azide at the Iowa Army Ammunition Plant in Middletown. The 8th U.S. Circuit Court of Appeals lifted a stay and let an Environmental Protection Agency permit stand, writing that a planned blast with safety measures was less dangerous than an unplanned explosion. Acting Army Secretary Adam Telle called it a consensus decision with state and federal authorities. The material, used in bomb triggers, has recrystallized after more than 20 years in storage, and the Army says it is unsafe to move. Residents fear a plume of lead dust. Earlier Monday, President Trump said he had told the military to wait for the court and for Gov.-elect Rob Sand to agree.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/science/environment/trump-postpones-planned-detonation-toxic-drums-iowa-army-facility-rcna610945",
+      "category": "National",
+      "publishedAt": "2026-11-23T16:22:00-07:00",
+      "image": {
+        "file": "2026-11-24-army-iowa-lead-detonation.webp",
+        "alt": "A red sign reading Iowa Army Ammunition Plant, seen through barbed wire at dusk",
+        "caption": "the Iowa Army Ammunition Plant in Middletown, Iowa.",
+        "credit": "Scott Olson/Getty Images, via NBC News."
+      }
+    },
+    {
+      "id": "2026-11-24-washington-bird-flu-death",
+      "headline": "WHO reports three Washington dairy-worker bird flu cases, including one death",
+      "summary": "The World Health Organization said Tuesday that the United States had notified it of three confirmed H5N1 infections in adults who worked on dairy farms in Yakima County, Washington, where the virus had recently been found in cattle. One patient, who had underlying conditions, developed severe respiratory illness and died on Nov. 1, the first reported death tied to exposure to infected dairy cattle or a related setting. The other two had milder illness, including eye irritation, and were not hospitalized. WHO said there is no evidence of spread between people and rates the risk to the general public as low. The CDC says the U.S. has now recorded 75 human H5 infections since February 2024.",
+      "sourceName": "World Health Organization",
+      "sourceUrl": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON629",
+      "category": "Health"
+    },
+    {
+      "id": "2026-11-23-thanksgiving-east-coast-storm",
+      "headline": "A coastal storm threatens to soak the East over Thanksgiving travel",
+      "summary": "A storm is expected to drench much of the eastern United States from Wednesday into Friday, with heavy rain and strong winds that could snarl one of the year's busiest travel periods, The Washington Post reported. Forecasters said several inches of rain are possible across broad stretches of the East and Midwest, with renewed flood concerns in Florida, where the ground is already saturated. The National Weather Service said a coastal storm will intensify and track up the East Coast over the holiday, bringing coastal flooding, powerful winds and heavy rain, while Pacific systems bring rain, mountain snow and high surf to the West.",
+      "sourceName": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/weather/2026/11/23/ahead-thanksgiving-travel-storm-system-could-drench-east-midwest/",
+      "category": "Weather",
+      "publishedAt": "2026-11-23T10:01:00-07:00",
+      "image": {
+        "file": "2026-11-23-thanksgiving-east-coast-storm.webp",
+        "alt": "A map of the eastern United States shaded by the chance of heavy precipitation through the morning of Nov. 28, darkest along the mid-Atlantic coast",
+        "caption": "forecast map of heavy precipitation through 7 a.m. Eastern Time on Nov. 28, 2026.",
+        "credit": "Ben Noll/The Washington Post."
+      }
+    },
+    {
+      "id": "2026-11-23-virginia-oregon-sue-spacex-grok",
+      "headline": "Virginia and Oregon sue SpaceX over sexual images from Grok",
+      "summary": "Virginia and Oregon sued SpaceX Super Intelligence on Monday, alleging the company profited from a Grok feature that produced child sexual abuse material and other nonconsensual sexual images from photographs, and that it failed to put safeguards in place. They are the first states to sue after several attorneys general opened similar investigations. The suits, filed under state consumer-protection laws, accuse the company of misleading people about Grok's safety while promoting what the complaints call a spicy mode, and they seek penalties and court orders. SpaceX did not immediately comment. In a post on X that did not address the suits directly, the platform's safety team said it had blocked prompts that could generate that imagery and was working with law enforcement.",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.investing.com/news/stock-market-news/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-of-child-sexual-abuse-images-and-videos-5045239",
+      "category": "Technology",
+      "publishedAt": "2026-11-23T13:30:00-07:00"
+    },
+    {
+      "id": "2026-11-24-gomez-resigns-ethics-findings",
+      "headline": "Rep. Jimmy Gomez resigns after House ethics findings of sexual misconduct",
+      "summary": "Rep. Jimmy Gomez, a California Democrat who has represented parts of Los Angeles since 2017, said he will resign after the House Ethics Committee found substantial evidence that he made unwelcome sexual advances toward a House staffer and disregarded the power imbalance. The bipartisan report said the conduct could amount to criminal sexual abuse. Gomez lost his reelection bid this fall to Democrat Angela Gonzales-Torres. He said he strongly disagrees with the report and its conclusions.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
+      "category": "Politics",
+      "publishedAt": "2026-11-24T05:12:00-07:00"
+    },
+    {
+      "id": "2026-11-24-mycolorado-app-shutdown",
+      "headline": "Colorado shuts down the myColorado app after a cybersecurity incident",
+      "summary": "Gov. Jared Polis's office took the myColorado app offline after the state Office of Information Technology found late on Nov. 18 that an unauthorized user had reached platform data. Officials estimate 50,000 to 150,000 users may be affected and said people who were will be told what to do. The outage hits Thanksgiving travel week, when some travelers had planned to use a mobile driver's license at airport security. The state told residents to use a physical license or other acceptable ID, and said agency websites, including the motor vehicle portal, still work. Chief information officer Sarah Tuneberg said protecting user data comes first and the app will return once protections are in place.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/mycolorado-app-shut-down-protect-data-cybersecurity-incident/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-24T06:55:00-07:00",
+      "image": {
+        "file": "2026-11-24-mycolorado-app-shutdown.webp",
+        "alt": "A notice on a screen saying the myColorado app is currently unavailable and that the state is investigating",
+        "caption": "a notice that the myColorado app is unavailable while the state investigates.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-23-colorado-power-shutoff-rules",
+      "headline": "Colorado hears debate over rules for wildfire power shutoffs",
+      "summary": "The Public Utilities Commission on Monday heard utilities, local governments and consumer advocates argue over when electric companies may cut power to reduce wildfire risk. Draft rules would make utilities file wildfire plans every three years, explain how shutoff decisions are made and how customers are warned, and state that shutoffs cannot be the main wildfire strategy. Xcel Energy said strict advance-notice rules could block a shutoff in a fast-moving fire like the Marshall Fire. Consumer advocates asked the commission to treat shutoffs as a last resort. Littleton Mayor Kyle Schlachter supported a fund for people and businesses hurt by outages. Black Hills said compliance could cost millions. The next hearing is expected in February.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/proposed-power-shutoff-rules-debate-wildfire-mitigation-customer-impact-colorado/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-23T17:56:00-07:00",
+      "image": {
+        "file": "2026-11-23-colorado-power-shutoff-rules.webp",
+        "alt": "An orange wildfire glowing on the horizon behind power lines, with farm buildings in the foreground",
+        "caption": "file photo of a wildfire behind transmission lines in open country.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-20-colorado-october-job-losses",
+      "headline": "Colorado unemployment rises to 4.4% as employers cut 5,700 jobs",
+      "summary": "Colorado employers cut 5,700 nonfarm jobs in October and the unemployment rate rose to 4.4% from 4.1% in September, the Colorado Department of Labor and Employment said. The national rate fell to 4.1%. Private employers shed 6,100 jobs while government added 400. Leisure and hospitality lost about 3,200 jobs and construction about 2,300. The household survey counted 139,200 unemployed residents, up 7,300. Over the year, Colorado payrolls grew 0.3%, behind the national 0.6% pace. Average hourly earnings for private workers rose to $40.33, $2.33 above the national average.",
+      "sourceName": "ColoradoBiz",
+      "sourceUrl": "https://coloradobiz.com/colorado-loses-5700-jobs-unemployment-rises-44-percent/",
+      "category": "Colorado"
+    },
+    {
+      "id": "2026-11-20-colorado-flood-relief-request",
+      "headline": "Polis asks for $28.5 million more in federal aid for southern Colorado floods",
+      "summary": "Gov. Jared Polis on Friday requested $28.5 million in federal disaster aid for southern Colorado communities hit by floods in late October and early November, and he said the damage tally will rise. An earlier request, filed Oct. 31 for almost $27 million from the first storm, is still pending. Counties reported 116 homes destroyed and 155 damaged; about 460 homes were still inaccessible and more than 3,000 people were under boil-water orders. The new request seeks household help in Archuleta, Conejos, La Plata and Rio Grande counties, and public repairs in those counties plus Mineral and Montezuma. President Trump denied a Colorado flood request last year.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/20/colorado-federal-flood-relief-second-request/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-20T11:38:00-07:00"
+    }
+  ]
+}
