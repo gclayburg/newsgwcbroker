@@ -5,7 +5,7 @@
 // successful production deployment. Not for browsers.
 //
 // Auth: `Authorization: Bearer <NOTIFY_SECRET>`. Without NOTIFY_SECRET set (at
-// least 20 characters) every request is refused.
+// least 16 characters) every request is refused.
 //
 // Body (JSON, optional):
 //   editionId  the edition the caller expects to be latest, e.g. "2026-11-25-0841".
@@ -27,8 +27,8 @@ const DELIVERY_DEADLINE_SECONDS = 2 * 24 * 60 * 60;
 const json = (status: number, body: Record<string, unknown>) =>
   Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 
-/** Shortest NOTIFY_SECRET accepted (a generated 20-character password is fine). */
-const MIN_SECRET_LENGTH = 20;
+/** Shortest NOTIFY_SECRET accepted (16+ random characters). */
+const MIN_SECRET_LENGTH = 16;
 
 function authorized(request: Request): boolean | "missing" | "too-short" {
   const secret = process.env.NOTIFY_SECRET?.trim();
