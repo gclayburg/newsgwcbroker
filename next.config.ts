@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   // (on Vercel), so the edition files must ship with its function.
   outputFileTracingIncludes: {
     "/api/notify-subscribers": ["./content/news/*.json"],
+    "/analytics": ["./content/news/*.json"],
   },
   turbopack: {
     rules: {
