@@ -1,6 +1,10 @@
 # Messages every Private Handle subscriber a summary of the latest edition,
 # once Vercel reports that a production deployment succeeded.
 #
+# Vercel reports deploys to this repo as commit statuses (context "Vercel"),
+# not as GitHub Deployments, so this runs on `status`: a successful "Vercel"
+# status on a commit in main is a finished production deployment.
+#
 # It calls POST /api/notify-subscribers on the live site with NOTIFY_SECRET.
 # Repeats are harmless: the gateway sends each edition at most once, so code-only
 # deploys and re-runs send nothing new.
@@ -14,7 +18,7 @@
 name: Notify subscribers
 
 on:
-  deployment_status:
+  status:
   workflow_dispatch:
     inputs:
       dry_run:
@@ -25,17 +29,18 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: notify-subscribers
-  cancel-in-progress: false
-
 jobs:
   notify:
-    # Vercel names its production environment "Production" (or "Production – <project>").
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event.deployment_status.state == 'success' &&
-       startsWith(github.event.deployment.environment, 'Production'))
+      (github.event.context == 'Vercel' &&
+       github.event.state == 'success' &&
+       contains(github.event.branches.*.name, 'main'))
+    # At the job level, so the many skipped runs (pending statuses, other
+    # contexts) never displace a real one in the queue.
+    concurrency:
+      group: notify-subscribers
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
@@ -45,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.deployment.sha || github.sha }}
+          ref: ${{ github.event.sha || github.sha }}
           sparse-checkout: content/news
 
       - name: Find the latest edition in the deployed commit

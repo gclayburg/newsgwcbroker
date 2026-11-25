@@ -261,10 +261,10 @@ After every run, report one of:
 
 Private Handle users who added news.gwcbroker.com receive a message for each new edition, sent through the domain's Private Handle gateway ([Gateway Integration Guide](https://demo1.privatehandle.com/docs/gateway/)).
 
-- **Flow:** Vercel finishes a production deployment and reports it to GitHub. `.github/workflows/notify-subscribers.yml` then runs on `deployment_status` and calls `POST https://news.gwcbroker.com/api/notify-subscribers` with `Authorization: Bearer <NOTIFY_SECRET>` and the edition id it expects to be latest. The route (`src/app/api/notify-subscribers/route.ts`) sends one `everyCustomer` batch to the gateway (`POST $GATEWAY_URL/api/owner-message-batches`), and the gateway delivers it to every active subscriber.
+- **Flow:** Vercel finishes a production deployment and reports it to GitHub as a successful `Vercel` commit status (Vercel does not create GitHub Deployments for this repo). `.github/workflows/notify-subscribers.yml` then runs on `status` (context `Vercel`, state `success`, commit in `main`) and calls `POST https://news.gwcbroker.com/api/notify-subscribers` with `Authorization: Bearer <NOTIFY_SECRET>` and the edition id it expects to be latest. The route (`src/app/api/notify-subscribers/route.ts`) sends one `everyCustomer` batch to the gateway (`POST $GATEWAY_URL/api/owner-message-batches`), and the gateway delivers it to every active subscriber.
 - **Message:** built by `src/lib/subscriber-message.ts`: edition title and subtitle, then every story in homepage order (headline, summary, source and link), then a link to the edition page. Summaries are shortened only if the text would exceed the gateway's 16 KB limit. The thread subject is the edition title.
 - **At most once per edition:** the gateway batch `requestId` is `edition-<edition id>`, and the gateway sends nothing for a repeated id (`already-sent`). That makes re-runs and code-only deploys harmless. The text must therefore be deterministic: never put the current time or anything random in it. If a corrected edition (or a changed message format) produces different text for the same id, the gateway refuses it, and the route reports `already-sent-content-changed` without sending.
-- **Protection:** the route only accepts POST with the bearer secret and refuses everything when `NOTIFY_SECRET` is unset or shorter than 32 characters. It refuses to send (dry runs still work) when reading the sandbox. If the deployed site's latest edition differs from the requested `editionId` it sends nothing (`409 edition_mismatch`); the Action retries that a few times while the domain switches over.
+- **Protection:** the route only accepts POST with the bearer secret and refuses everything when `NOTIFY_SECRET` is unset or shorter than 20 characters (the `notify_not_configured` response says which). It refuses to send (dry runs still work) when reading the sandbox. If the deployed site's latest edition differs from the requested `editionId` it sends nothing (`409 edition_mismatch`); the Action retries that a few times while the domain switches over.
 - **Manual run / preview:** GitHub → Actions → *Notify subscribers* → *Run workflow*. "Dry run" (on by default) shows the message without sending it.
 - **Configuration** (never commit these values, never use `NEXT_PUBLIC_*`):
 
@@ -272,7 +272,7 @@ Private Handle users who added news.gwcbroker.com receive a message for each new
   |---|---|---|
   | Vercel env (Production) | `GATEWAY_URL` | `https://register.privatehandle.com/owner/news.gwcbroker.com` |
   | Vercel env (Production) | `GATEWAY_API_KEY` | the gateway's API key (full rights; server-side only) |
-  | Vercel env (Production) | `NOTIFY_SECRET` | a random string of 32+ characters, e.g. `openssl rand -hex 32` |
+  | Vercel env (Production) | `NOTIFY_SECRET` | a random string of 20+ characters, e.g. `openssl rand -hex 32` or a password generator |
   | GitHub repository secret | `NOTIFY_SECRET` | the same value as in Vercel |
 
 - **Testing locally:** `npm run build`, then start the site with `NOTIFY_SECRET` set and `GATEWAY_URL` pointing at a local mock (plain `http://` is accepted only for `localhost`/`127.0.0.1`), and `POST /api/notify-subscribers` with `{"dryRun":true}` to see the message. Never point a local test at the production gateway unless you mean to message real subscribers.
