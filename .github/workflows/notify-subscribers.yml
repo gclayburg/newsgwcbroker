@@ -1,0 +1,99 @@
+# Messages every Private Handle subscriber a summary of the latest edition,
+# once Vercel reports that a production deployment succeeded.
+#
+# It calls POST /api/notify-subscribers on the live site with NOTIFY_SECRET.
+# Repeats are harmless: the gateway sends each edition at most once, so code-only
+# deploys and re-runs send nothing new.
+#
+# Setup: repository secret NOTIFY_SECRET = the same value as the NOTIFY_SECRET
+# environment variable in Vercel (Production). See AGENTS.md.
+#
+# Manual run: Actions → "Notify subscribers" → Run workflow. Leave "dry run" on
+# to preview the message without sending it.
+
+name: Notify subscribers
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: build the message and show it, but send nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify-subscribers
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    # Vercel names its production environment "Production" (or "Production – <project>").
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       startsWith(github.event.deployment.environment, 'Production'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SITE_URL: https://news.gwcbroker.com
+      NOTIFY_SECRET: ${{ secrets.NOTIFY_SECRET }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+          sparse-checkout: content/news
+
+      - name: Find the latest edition in the deployed commit
+        id: edition
+        run: |
+          id=$(node -e '
+            const fs = require("fs");
+            const latest = fs.readdirSync("content/news")
+              .filter((f) => /^\d{4}-\d{2}-\d{2}-\d{4}\.json$/.test(f))
+              .map((f) => ({ id: f.slice(0, -5), t: Date.parse(JSON.parse(fs.readFileSync("content/news/" + f, "utf8")).publishedAt) }))
+              .sort((a, b) => b.t - a.t)[0];
+            process.stdout.write(latest ? latest.id : "");
+          ')
+          if [ -z "$id" ]; then echo "No edition found; nothing to send."; fi
+          echo "id=$id" >> "$GITHUB_OUTPUT"
+          echo "Latest edition: ${id:-none}"
+
+      - name: Notify subscribers
+        if: steps.edition.outputs.id != ''
+        env:
+          EDITION_ID: ${{ steps.edition.outputs.id }}
+        run: |
+          if [ -z "$NOTIFY_SECRET" ]; then
+            echo "::error::Repository secret NOTIFY_SECRET is not set."; exit 1
+          fi
+          body=$(printf '{"editionId":"%s","dryRun":%s}' "$EDITION_ID" "${DRY_RUN:-false}")
+          # The custom domain can take a moment to point at the new deployment:
+          # on edition_mismatch, wait and try again.
+          for attempt in 1 2 3 4 5 6; do
+            code=$(curl -sS -o response.json -w '%{http_code}' --max-time 60 \
+              -X POST "$SITE_URL/api/notify-subscribers" \
+              -H "Authorization: Bearer $NOTIFY_SECRET" \
+              -H 'Content-Type: application/json' \
+              -d "$body") || code=000
+            if [ "$code" = 409 ] && grep -q '"edition_mismatch"' response.json; then
+              echo "Attempt $attempt: site does not show $EDITION_ID yet; retrying in 20 s."
+              sleep 20; continue
+            fi
+            break
+          done
+          echo "HTTP $code"
+          node -e '
+            const r = JSON.parse(require("fs").readFileSync("response.json", "utf8"));
+            const { text, ...rest } = r;
+            console.log(JSON.stringify(rest, null, 2));
+            if (text) console.log("\n----- message -----\n" + text);
+          ' 2>/dev/null || cat response.json
+          case "$code" in
+            200|202) ;;
+            *) echo "::error::Notifying subscribers failed (HTTP $code)."; exit 1 ;;
+          esac

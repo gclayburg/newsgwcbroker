@@ -24,6 +24,8 @@ There is no database and no publishing API. **Publishing = committing a valid ed
 
 Each story is shown with its headline (linked to the original article), source, date, category and summary. When a story has an `image`, the photo is shown beside it with its caption and credit underneath. Stories without an image are shown as text only.
 
+**Publishing also messages real people.** After each successful production deployment, a GitHub Action sends every Private Handle subscriber of news.gwcbroker.com one message summarizing every story in the latest edition (see [Subscriber notifications](#subscriber-notifications-private-handle)). Each edition is sent at most once, so an edition that goes live is announced to subscribers, and a later correction is not re-sent.
+
 ---
 
 ## Publishing news editions
@@ -231,6 +233,7 @@ A push is **not** published until Vercel has deployed it successfully:
    `success` means it deployed. `failure` or `error` means it did not. `pending` means the build is still running, so check again shortly.
 2. Confirm the site is up: `https://news.gwcbroker.com/api/health` should return HTTP 200 with `{"status":"ok",...}`.
 3. Open https://news.gwcbroker.com and confirm it shows **your** edition as the latest: its title appears at the top under a "Latest edition" label, with your headlines and photos. Your edition is also listed first at https://news.gwcbroker.com/editions.
+4. The **Notify subscribers** GitHub Action runs automatically after the deployment and messages Private Handle subscribers. You don't need to trigger it. If it fails, mention it in your report; do not re-publish the edition to retry it.
 
 ### 10. Reporting
 
@@ -244,7 +247,7 @@ After every run, report one of:
 ## Developing the site
 
 - `npm run dev` starts the dev server. Other checks: `npm run lint`, `npm run typecheck`, `npm run validate:content`, `npm run build`.
-- App code lives in `src/app/`; the health endpoint is `src/app/api/health/route.ts`.
+- App code lives in `src/app/`; the health endpoint is `src/app/api/health/route.ts`; the Private Handle subscriber notification is `src/app/api/notify-subscribers/route.ts` (see [Subscriber notifications](#subscriber-notifications-private-handle)).
 - `scripts/validate-content.mjs` is the source of truth for the edition schema. Keep it, this file, and any TypeScript types for editions in sync. Bump `schemaVersion` for breaking changes.
 - Pages: `src/app/page.tsx` (latest edition), `src/app/editions/page.tsx` (archive), `src/app/editions/[id]/page.tsx` (one edition). Layout in `src/components/edition-view.tsx`; header (Download PDF = print dialog, Copy link, theme toggle) in `src/components/site-chrome.tsx` and `header-actions.tsx`. Editions are loaded by `src/lib/editions.ts`.
 - Theme: CSS tokens in `src/app/globals.css`. It follows the OS light/dark setting until the visitor clicks the toggle; that choice is saved in `localStorage("theme")` and applied before paint by an inline script in `layout.tsx`. Use the token colors (`bg-background`, `text-muted`, `border-border`, ...), not Tailwind's `dark:` variant, which ignores the toggle.
@@ -253,6 +256,26 @@ After every run, report one of:
   - show the edition with the **greatest `publishedAt`** on the homepage. Compare parsed timestamps, not file names: the name only has minute precision, and Mountain Time repeats the 1 a.m. hour when daylight saving ends;
   - treat each edition as a complete front page (no merging across editions);
   - tolerate an empty folder.
+
+### Subscriber notifications (Private Handle)
+
+Private Handle users who added news.gwcbroker.com receive a message for each new edition, sent through the domain's Private Handle gateway ([Gateway Integration Guide](https://demo1.privatehandle.com/docs/gateway/)).
+
+- **Flow:** Vercel finishes a production deployment and reports it to GitHub. `.github/workflows/notify-subscribers.yml` then runs on `deployment_status` and calls `POST https://news.gwcbroker.com/api/notify-subscribers` with `Authorization: Bearer <NOTIFY_SECRET>` and the edition id it expects to be latest. The route (`src/app/api/notify-subscribers/route.ts`) sends one `everyCustomer` batch to the gateway (`POST $GATEWAY_URL/api/owner-message-batches`), and the gateway delivers it to every active subscriber.
+- **Message:** built by `src/lib/subscriber-message.ts`: edition title and subtitle, then every story in homepage order (headline, summary, source and link), then a link to the edition page. Summaries are shortened only if the text would exceed the gateway's 16 KB limit. The thread subject is the edition title.
+- **At most once per edition:** the gateway batch `requestId` is `edition-<edition id>`, and the gateway sends nothing for a repeated id (`already-sent`). That makes re-runs and code-only deploys harmless. The text must therefore be deterministic: never put the current time or anything random in it. If a corrected edition (or a changed message format) produces different text for the same id, the gateway refuses it, and the route reports `already-sent-content-changed` without sending.
+- **Protection:** the route only accepts POST with the bearer secret and refuses everything when `NOTIFY_SECRET` is unset or shorter than 32 characters. It refuses to send (dry runs still work) when reading the sandbox. If the deployed site's latest edition differs from the requested `editionId` it sends nothing (`409 edition_mismatch`); the Action retries that a few times while the domain switches over.
+- **Manual run / preview:** GitHub → Actions → *Notify subscribers* → *Run workflow*. "Dry run" (on by default) shows the message without sending it.
+- **Configuration** (never commit these values, never use `NEXT_PUBLIC_*`):
+
+  | Where | Name | Value |
+  |---|---|---|
+  | Vercel env (Production) | `GATEWAY_URL` | `https://register.privatehandle.com/owner/news.gwcbroker.com` |
+  | Vercel env (Production) | `GATEWAY_API_KEY` | the gateway's API key (full rights; server-side only) |
+  | Vercel env (Production) | `NOTIFY_SECRET` | a random string of 32+ characters, e.g. `openssl rand -hex 32` |
+  | GitHub repository secret | `NOTIFY_SECRET` | the same value as in Vercel |
+
+- **Testing locally:** `npm run build`, then start the site with `NOTIFY_SECRET` set and `GATEWAY_URL` pointing at a local mock (plain `http://` is accepted only for `localhost`/`127.0.0.1`), and `POST /api/notify-subscribers` with `{"dryRun":true}` to see the message. Never point a local test at the production gateway unless you mean to message real subscribers.
 
 ### Testing locally with the sandbox
 
