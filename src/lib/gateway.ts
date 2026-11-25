@@ -27,6 +27,22 @@ function config(): { url: string; key: string } {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** GET a gateway API route (read-only; one attempt, 10 s timeout). */
+export async function gatewayGet(path: string): Promise<GatewayResult> {
+  const { url, key } = config();
+  try {
+    const res = await fetch(`${url}${path}`, {
+      headers: { "X-Gateway-Api-Key": key, Accept: "application/json" },
+      cache: "no-store",
+      signal: AbortSignal.timeout(10_000),
+    });
+    const body = (await res.json().catch(() => null)) as Record<string, unknown> | null;
+    return { status: res.status, body };
+  } catch (err) {
+    return { status: 0, body: { error: "network_error", message: String(err) } };
+  }
+}
+
 /**
  * POST JSON to a gateway API route. Retries 429 (honouring Retry-After), 503
  * and network errors a few times with the SAME body, so the request id makes
