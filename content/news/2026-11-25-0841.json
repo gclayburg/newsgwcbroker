@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-25",
+  "title": "Morning Briefing — November 25, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories for the Wednesday before Thanksgiving.",
+  "intro": "Six national stories and four Colorado stories, as of about 8:41 a.m. Mountain Time on Wednesday, Nov. 25. The Iowa detonation, the East Coast storm, Jensen Huang's return, and the myColorado outage are carried forward under the same ids. Three stories have no photo: the inflation report, Kilmar Abrego Garcia's departure, and Denver's convention funding had no usable news photograph that could be stored. The tariff image is a file photo from April 2025, the Aurora data-center image is a file photo from a March 2026 rally, and the Huang image remains a file photo from an earlier meeting.",
+  "publishedAt": "2026-11-25T08:41:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-25-ustr-section-301-tariffs",
+      "headline": "U.S. proposes new tariffs on China, the E.U. and 12 other economies",
+      "summary": "U.S. Trade Representative Jamieson Greer said Wednesday that policies in 14 economies, including China and the European Union, feed excess factory capacity and burden American commerce. He proposed new tariffs for public comment. For China, the plan would put duties of up to 20% on many goods, net of an existing forced-labor tariff, and up to 10% on a shorter list tied to a U.S.-China product arrangement. For the European Union, the proposal is a 15% rate after ordinary import duties and existing Section 301 tariffs, with a possible 20% if talks fall short. The other economies named include Japan, South Korea, Taiwan, India, Vietnam, and several in Southeast Asia. Mexico and Norway were left out of Wednesday's findings. The duties are proposals and are not yet in force.",
+      "sourceName": "Office of the U.S. Trade Representative",
+      "sourceUrl": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+      "category": "Economy",
+      "image": {
+        "file": "2026-11-25-ustr-section-301-tariffs.webp",
+        "alt": "President Trump at a podium beside a large chart labeled Reciprocal Tariffs, with country rates listed in columns",
+        "caption": "file photo of President Trump with a reciprocal-tariff chart at the White House on April 2, 2025.",
+        "credit": "Mark Schiefelbein/AP."
+      }
+    },
+    {
+      "id": "2026-11-24-army-iowa-lead-detonation",
+      "headline": "Army detonates the U.S. stockpile of unstable lead azide in Iowa",
+      "summary": "The Army detonated the country's stockpile of degraded lead azide Wednesday morning at the Iowa Army Ammunition Plant in Middletown, the Associated Press reported, after warning the crystallized explosive could otherwise blow up on its own. The blast covered roughly 5 tons in 68 drums that officials said were too unstable to move or open. Residents in a zone southwest of the plant had been urged to leave, and people farther out were told to stay indoors because of lead dust. The Environmental Protection Agency said it would keep sampling air, soil and water and had not detected lead in the air before the detonation.",
+      "sourceName": "Associated Press",
+      "sourceUrl": "https://apnews.com/article/iowa-lead-detonation-77fa69b9e88b46c5d1adc29841d2b4cc",
+      "category": "National",
+      "image": {
+        "file": "2026-11-24-army-iowa-lead-detonation.webp",
+        "alt": "A red sign reading Iowa Army Ammunition Plant, seen through barbed wire at dusk",
+        "caption": "the Iowa Army Ammunition Plant in Middletown, Iowa.",
+        "credit": "Scott Olson/Getty Images, via NBC News."
+      }
+    },
+    {
+      "id": "2026-11-25-october-pce-inflation",
+      "headline": "Fed's preferred inflation gauge rises to 3.8% in October",
+      "summary": "Prices rose again in October by the measure the Federal Reserve watches most closely. The Bureau of Economic Analysis said Wednesday that the personal consumption expenditures price index increased 0.3% from September and 3.8% from a year earlier. The core index, which leaves out food and energy, also rose 0.3% on the month and 3.3% on the year. Personal income increased 0.7%, while inflation-adjusted consumer spending was essentially flat. The Fed's inflation target is 2%, and its last rate-setting meeting of the year is about two weeks away.",
+      "sourceName": "Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026",
+      "category": "Economy",
+      "publishedAt": "2026-11-25T06:30:00-07:00"
+    },
+    {
+      "id": "2026-11-25-abrego-garcia-leaves-us",
+      "headline": "Kilmar Abrego Garcia leaves the U.S. for Spain after a long deportation fight",
+      "summary": "Kilmar Abrego Garcia left the United States on Tuesday for Spain, closing the latest chapter of a nearly two-year case that began when he was arrested in 2025 and mistakenly deported to El Salvador. His lawyer, Simon Sandoval-Moshenberg, said he took a commercial flight of his choosing and left as a free man, and described the trip as temporary because his wife and child are U.S. citizens. The lawyer said Abrego Garcia would spend about two years abroad while ways to return remain open. The Department of Homeland Security said it was glad he left. After he was brought back, prosecutors charged him with human smuggling, which he denies.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
+      "category": "National",
+      "publishedAt": "2026-11-25T05:18:00-07:00"
+    },
+    {
+      "id": "2026-11-23-thanksgiving-east-coast-storm",
+      "headline": "Thanksgiving storm brings wind, rain and coastal flooding up the East Coast",
+      "summary": "A coastal storm is moving up the East Coast in time for one of the year's busiest travel days, with heavy rain, high wind and coastal flooding from the Southeast into New England. The Weather Channel said Wednesday is the buildup in the Southeast and Thanksgiving is the peak from the mid-Atlantic north, with gusts that could top 60 mph where high-wind warnings are posted, including New York City and Philadelphia. Those gusts could keep balloons on the ground at the Macy's parade if they pass the city's limit. Forecasters expect about 1 to 4 inches of rain. King tides and onshore wind could flood streets along the Jersey Shore on Thanksgiving morning, and showers and wind may linger into Friday.",
+      "sourceName": "The Weather Channel",
+      "sourceUrl": "https://weather.com/2026/11/25/holiday/thanksgiving/east-coast-thanksgiving-storm-wind-rain-flooding",
+      "category": "Weather",
+      "publishedAt": "2026-11-25T08:02:00-07:00",
+      "image": {
+        "file": "2026-11-23-thanksgiving-east-coast-storm.webp",
+        "alt": "A map of the eastern United States shaded by the chance of heavy precipitation through the morning of Nov. 28, darkest along the mid-Atlantic coast",
+        "caption": "forecast map of heavy precipitation through 7 a.m. Eastern Time on Nov. 28, 2026.",
+        "credit": "Ben Noll/The Washington Post."
+      }
+    },
+    {
+      "id": "2026-11-24-huang-returns-nvidia-ceo",
+      "headline": "Huang apologizes to Nvidia staff as Congress presses his return",
+      "summary": "Jensen Huang, restored as Nvidia's chief executive, apologized to employees Tuesday for his earlier conduct and denied that President Trump pressed the board to bring him back, NPR reported, citing The New York Times. Huang had resigned two weeks earlier after reports of affairs, including one with a woman U.S. officials suspected of spying for China. Trump has said he intervened and told the New York Post he is open to a pardon but does not think one is needed. Sen. Elizabeth Warren said Huang owes Congress answers on rules meant to keep advanced chips out of China, and Sen. Tom Cotton called for an investigation. House Democrats asked the White House to say by Dec. 8 what the president knew. Huang is still due for a closed House interview and Senate Banking testimony.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
+      "category": "Business",
+      "publishedAt": "2026-11-25T05:18:00-07:00",
+      "image": {
+        "file": "2026-11-24-huang-returns-nvidia-ceo.webp",
+        "alt": "Jensen Huang in a dark suit shaking hands with President Trump, who is wearing a blue suit and light blue tie, outdoors with other people nearby",
+        "caption": "file photo of Jensen Huang greeting President Trump.",
+        "credit": "NBC News."
+      }
+    },
+    {
+      "id": "2026-11-25-aurora-data-center-moratorium",
+      "headline": "Aurora pauses new data centers as Vantage drops a 500-megawatt plan",
+      "summary": "Aurora's City Council on Monday adopted a one-year timeout on new data centers in the most developed part of the city, south of Interstate 70 and west of Powhaton Road, while it writes fuller rules. Mayor Mike Coffman also said Denver-based Vantage Data Centers will drop its planned 500-megawatt Trident campus near E-470 and East 48th Avenue, which had drawn opposition from neighborhoods east of Green Valley Ranch. Vantage said it is looking at other sites and still wants to build in Colorado. A citywide pause failed twice. Projects already underway, including a 160-megawatt QTS center, are not covered. The timeout runs until October 2027.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/25/aurora-data-center-moratorium-vantage-data-trident/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-25T04:15:00-07:00",
+      "image": {
+        "file": "2026-11-25-aurora-data-center-moratorium.webp",
+        "alt": "Two people on stone steps holding a handmade sign that reads Data Center Accountability Now",
+        "caption": "file photo of demonstrators calling for data-center accountability at a rally in March 2026.",
+        "credit": "The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-24-aurora-fentanyl-overdose",
+      "headline": "Two people die in a suspected fentanyl overdose at an Aurora apartment",
+      "summary": "Aurora police said two adults died and three others were hospitalized after a suspected fentanyl overdose Monday morning at the Park 16 Apartments on East 16th Avenue, just north of Colfax. Officers found five adults unresponsive shortly before 7:40 a.m. A man and a woman were pronounced dead at the scene. The other three were taken to hospitals and were initially reported in stable condition. The DEA's Rocky Mountain division called it the largest suspected mass overdose it knew of in the region since five deaths in Commerce City in February 2022. State figures cited locally show Colorado fentanyl deaths rose from 760 in 2024 to 980 in 2025. Tests are pending, and investigators are trying to trace the drugs.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/fentanyl-deaths-aurora-colorado-resurgence-suspected-mass-overdose/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-24T22:22:00-07:00",
+      "image": {
+        "file": "2026-11-24-aurora-fentanyl-overdose.webp",
+        "alt": "A two-story red brick apartment building with a parking lot of cars in front under a clear sky",
+        "caption": "the Aurora apartment complex where police responded to a suspected overdose.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-24-mycolorado-app-shutdown",
+      "headline": "myColorado app stays offline after a cybersecurity incident",
+      "summary": "Gov. Jared Polis's office took the myColorado app offline after the state Office of Information Technology found late on Nov. 18 that an unauthorized user had reached platform data. Officials estimate 50,000 to 150,000 users may be affected and said people who were will be told what to do. The outage still matters for Thanksgiving travel, when some travelers had planned to use a mobile driver's license at airport security. The state told residents to use a physical license or other acceptable ID, and said agency websites, including the motor vehicle portal, still work. Chief information officer Sarah Tuneberg said protecting user data comes first and the app will return once protections are in place.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/mycolorado-app-shut-down-protect-data-cybersecurity-incident/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-24T06:55:00-07:00",
+      "image": {
+        "file": "2026-11-24-mycolorado-app-shutdown.webp",
+        "alt": "A notice on a screen saying the myColorado app is currently unavailable and that the state is investigating",
+        "caption": "a notice that the myColorado app is unavailable while the state investigates.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-23-denver-dnc-standby-funding",
+      "headline": "Denver sets aside $40 million as a backstop for a 2028 convention bid",
+      "summary": "The Denver City Council voted 9-2 Monday to offer a $40 million reimbursable grant as standby funding for the city's bid to host the 2028 Democratic National Convention. Mayor Mike Johnston and city finance staff said the money, drawn from the Denver Downtown Development Authority, would be spent only if Denver is chosen and private fundraising falls short, and that they expect it to come back unused. Councilmembers Stacie Gilmore and Shontel Lewis voted no. Denver is a finalist with Boston and Philadelphia. The convention is set for Aug. 7-10, 2028, and the party is expected to pick a host before the end of the year. The city estimates a broader economic impact of about $226 million if Denver is selected.",
+      "sourceName": "Denverite",
+      "sourceUrl": "https://denverite.com/2026/11/23/democratic-national-convention-denver-funding-approved/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-23T16:59:00-07:00"
+    }
+  ]
+}
