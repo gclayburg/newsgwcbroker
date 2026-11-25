@@ -5,7 +5,7 @@
 // successful production deployment. Not for browsers.
 //
 // Auth: `Authorization: Bearer <NOTIFY_SECRET>`. Without NOTIFY_SECRET set (at
-// least 32 characters) every request is refused.
+// least 20 characters) every request is refused.
 //
 // Body (JSON, optional):
 //   editionId  the edition the caller expects to be latest, e.g. "2026-11-25-0841".
@@ -27,9 +27,13 @@ const DELIVERY_DEADLINE_SECONDS = 2 * 24 * 60 * 60;
 const json = (status: number, body: Record<string, unknown>) =>
   Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 
-function authorized(request: Request): boolean | "unconfigured" {
+/** Shortest NOTIFY_SECRET accepted (a generated 20-character password is fine). */
+const MIN_SECRET_LENGTH = 20;
+
+function authorized(request: Request): boolean | "missing" | "too-short" {
   const secret = process.env.NOTIFY_SECRET?.trim();
-  if (!secret || secret.length < 32) return "unconfigured";
+  if (!secret) return "missing";
+  if (secret.length < MIN_SECRET_LENGTH) return "too-short";
   const header = request.headers.get("authorization") ?? "";
   const token = header.startsWith("Bearer ") ? header.slice(7).trim() : "";
   // Compare fixed-length digests so the comparison time reveals nothing.
@@ -39,7 +43,13 @@ function authorized(request: Request): boolean | "unconfigured" {
 
 export async function POST(request: Request) {
   const auth = authorized(request);
-  if (auth === "unconfigured") return json(503, { error: "notify_not_configured" });
+  if (auth === "missing" || auth === "too-short") {
+    // Says why, but nothing about the value itself.
+    return json(503, {
+      error: "notify_not_configured",
+      reason: auth === "missing" ? "NOTIFY_SECRET is not set" : `NOTIFY_SECRET is shorter than ${MIN_SECRET_LENGTH} characters`,
+    });
+  }
   if (!auth) return json(401, { error: "unauthorized" });
 
   let input: { editionId?: unknown; dryRun?: unknown } = {};
