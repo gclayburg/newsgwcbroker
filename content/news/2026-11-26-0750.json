@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-26",
+  "title": "Morning Briefing — November 26, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories for Thanksgiving morning.",
+  "intro": "Six national stories and four Colorado stories, as of about 7:50 a.m. Mountain Time on Thanksgiving, Thursday, Nov. 26. The East Coast storm, the Iowa detonation, the tariff proposal, the myColorado outage and the Aurora overdose are carried forward under the same ids. Two stories have no photo: the court order on ABC's licenses and Aurora's Arkansas Valley water purchase had no usable news photograph that could be stored. The tariff image remains a file photo from April 2025.",
+  "publishedAt": "2026-11-26T07:50:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-26-macys-parade-postponed",
+      "headline": "Macy's postpones its 100th Thanksgiving parade until Saturday",
+      "summary": "Macy's moved its 100th Thanksgiving Day Parade to Saturday because of the East Coast storm, saying the safety of participants and spectators came first. The parade is now set for 8:30 a.m. Eastern Time on Nov. 28. Mayor Zohran Mamdani said Thursday's forecast called for sustained winds of 30 to 40 mph and gusts that could reach 65 mph. City rules keep the balloons down when sustained winds pass 23 mph. Executive producer Will Coss said balloons already in New York have to be deflated, trucked to New Jersey and made parade-ready again in about a day. NBC will air last year's parade Thursday morning and broadcast Saturday's parade at 8:30 a.m. The parade was canceled only in 1942, 1943 and 1944, and the balloons last stayed on the ground in 1971.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/macys-thanksgiving-day-parade-weather-delay-rcna611355",
+      "category": "National",
+      "publishedAt": "2026-11-25T13:53:00-07:00",
+      "image": {
+        "file": "2026-11-26-macys-parade-postponed.webp",
+        "alt": "Handlers in red jumpsuits steady a giant Snoopy balloon lying on its side on a city street lined with autumn trees",
+        "caption": "handlers with the Snoopy balloon during preparations for the Macy's Thanksgiving Day Parade in New York.",
+        "credit": "NBC News."
+      }
+    },
+    {
+      "id": "2026-11-23-thanksgiving-east-coast-storm",
+      "headline": "Thanksgiving storm peaks on the East Coast as hundreds of flights are canceled",
+      "summary": "The coastal storm that pushed the Macy's parade off Thanksgiving is at its peak from the mid-Atlantic into New England, with heavy rain, high wind and coastal flooding. NBC News reported more than 300 flights to, from or within the United States canceled Thursday, after more than 150 cancellations and about 6,000 delays on Wednesday. Mayor Zohran Mamdani warned New Yorkers of sustained winds of 30 to 40 mph and gusts that could reach 65 mph, and urged people to leave extra time or stay indoors if travel turns dangerous. Forecasters expect about 1 to 4 inches of rain in the mid-Atlantic and 1 to 2 inches in southern New England. Showers and wind may linger Friday. On the West Coast, king tides and high surf are still hitting the shoreline.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/storms-weather-thanksgiving-iowa-detonation-aftermath-morning-rundown-rcna611416",
+      "category": "Weather",
+      "publishedAt": "2026-11-26T05:07:00-07:00",
+      "image": {
+        "file": "2026-11-23-thanksgiving-east-coast-storm.webp",
+        "alt": "A map of the eastern United States shaded by the chance of heavy precipitation through the morning of Nov. 28, darkest along the mid-Atlantic coast",
+        "caption": "forecast map of heavy precipitation through 7 a.m. Eastern Time on Nov. 28, 2026.",
+        "credit": "Ben Noll/The Washington Post."
+      }
+    },
+    {
+      "id": "2026-11-24-army-iowa-lead-detonation",
+      "headline": "Iowa residents wait on lead tests after the Army's ammunition-plant blast",
+      "summary": "A day after the Army detonated the country's stockpile of unstable lead azide at the Iowa Army Ammunition Plant in Middletown, crews are testing air, soil and water for lead. The blast covered roughly 5 tons in 68 drums that officials said were too unstable to move or open. The Environmental Protection Agency has said it has not found lead in the air, and NPR reported about 300 people sampling the area. Residents nearest the plant told NBC News they are unsure when it is safe to return, and outside experts said it will take days to know whether any hotspots need cleanup. The University of Iowa and the University of Illinois are running their own regional tests, with results expected in a few days.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+      "category": "National",
+      "image": {
+        "file": "2026-11-24-army-iowa-lead-detonation.webp",
+        "alt": "A red sign reading Iowa Army Ammunition Plant, seen through barbed wire at dusk",
+        "caption": "the Iowa Army Ammunition Plant in Middletown, Iowa.",
+        "credit": "Scott Olson/Getty Images, via NBC News."
+      }
+    },
+    {
+      "id": "2026-11-25-pacifica-pier-collapse",
+      "headline": "King tides tear away part of the Pacifica pier",
+      "summary": "King tides and large Pacific waves tore away part of the Pacifica Municipal Pier on Wednesday. State Sen. Josh Becker said the end of the pier, which was already closed, fell into the ocean around midday. The city had shut that section in June after cracks appeared and had been stabilizing it with a $2.25 million state investment, Becker said. The National Weather Service warned of breaking waves that could reach 30 feet and kept a coastal flood advisory and high surf warning in place. San Francisco's Wednesday morning tide peaked at 8.21 feet, just under Tuesday's November record of 8.23 feet. In Marin County, officials warned Stinson Beach residents before the peak and later lifted shelter-in-place and evacuation orders after flooding in low-lying parts of Mill Valley and Corte Madera.",
+      "sourceName": "KQED",
+      "sourceUrl": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area",
+      "category": "National",
+      "image": {
+        "file": "2026-11-25-pacifica-pier-collapse.webp",
+        "alt": "A huge wave crashing through a gap in a long pier, with the broken far end still standing on pilings",
+        "caption": "waves breaking over the Pacifica Municipal Pier in Pacifica, Calif., on Nov. 25, 2026.",
+        "credit": "Beth LaBerge/KQED."
+      }
+    },
+    {
+      "id": "2026-11-25-fcc-abc-license-injunction",
+      "headline": "Judge blocks the FCC's early review of ABC station licenses",
+      "summary": "U.S. District Judge Loren AliKhan on Wednesday blocked the Federal Communications Commission from going further with an early review of ABC station licenses. Her order denies the commission's request to dismiss a lawsuit by ABC and Disney and bars officials, including Chairman Brendan Carr, from continuing those early-renewal proceedings, including issuing a hearing designation order. The court found the networks are likely to show the review retaliated for protected speech, including political coverage and on-air commentary. ABC and Disney must post a $1 bond by Dec. 2, and the commission must tell the court the same day how it is complying. The order is aimed at those early license-renewal proceedings.",
+      "sourceName": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
+      "category": "Politics"
+    },
+    {
+      "id": "2026-11-25-ustr-section-301-tariffs",
+      "headline": "U.S. proposes new tariffs on China, the E.U. and 12 other economies",
+      "summary": "U.S. Trade Representative Jamieson Greer said Wednesday that policies in 14 economies, including China and the European Union, feed excess factory capacity and burden American commerce. He proposed new tariffs for public comment. For China, the plan would put duties of up to 20% on many goods, net of an existing forced-labor tariff, and up to 10% on a shorter list tied to a U.S.-China product arrangement. For the European Union, the proposal is a 15% rate after ordinary import duties and existing Section 301 tariffs, with a possible 20% if talks fall short. The other economies named include Japan, South Korea, Taiwan, India, Vietnam, and several in Southeast Asia. Mexico and Norway were left out of Wednesday's findings. The duties are proposals and are not yet in force.",
+      "sourceName": "Office of the U.S. Trade Representative",
+      "sourceUrl": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+      "category": "Economy",
+      "image": {
+        "file": "2026-11-25-ustr-section-301-tariffs.webp",
+        "alt": "President Trump at a podium beside a large chart labeled Reciprocal Tariffs, with country rates listed in columns",
+        "caption": "file photo of President Trump with a reciprocal-tariff chart at the White House on April 2, 2025.",
+        "credit": "Mark Schiefelbein/AP."
+      }
+    },
+    {
+      "id": "2026-11-24-mycolorado-app-shutdown",
+      "headline": "myColorado stays dark as the state says documents for about 100,000 people were reached",
+      "summary": "Colorado's myColorado app is still offline, with no date to return, after the Governor's Office of Information Technology said Wednesday that the Nov. 18 incident mainly reached the myDocuments area. That is where users store uploads such as photos and PDFs of passports, vehicle registrations and insurance cards. The office said payment information was not involved. It estimates data for about 100,000 of the app's 2.1 million users was reached and said it is matching files to people. Notices that name the documents involved are expected to start going out Friday. Travelers still need a physical license or another accepted ID at airport security. The office said it is testing security changes before any relaunch.",
+      "sourceName": "9News",
+      "sourceUrl": "https://www.9news.com/article/tech/personal-tech/state-details-data-accessed-from-mycolorado-app-no-timetable-for-going-back-online/73-9a8f0be2-2413-41ad-9fee-d01a602ec4a5",
+      "category": "Colorado",
+      "publishedAt": "2026-11-25T16:08:00-07:00",
+      "image": {
+        "file": "2026-11-24-mycolorado-app-shutdown.webp",
+        "alt": "A notice on a screen saying the myColorado app is currently unavailable and that the state is investigating",
+        "caption": "a notice that the myColorado app is unavailable while the state investigates.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-25-southern-colorado-flood-roads",
+      "headline": "Southern Colorado shortens flood detours before Thanksgiving travel",
+      "summary": "Colorado reopened a state highway Monday and cut the detour between Durango and Pagosa Springs ahead of Thanksgiving, after floods in late October tore up roads across the south of the state. Travelers can use Colorado 151, about an hour and 45 minutes, instead of a detour of more than three hours through New Mexico. Wolf Creek Pass on U.S. 160 reopened Saturday, linking Pagosa Springs to the east again. U.S. 160 west of Pagosa Springs, including a bridge the flood broke at the Piedra River, is not expected back until December or early 2027. The Colorado Department of Transportation put damage to state roads at about $156 million, up from an early estimate of $65 million. The Federal Highway Administration added $15.6 million in emergency relief, including about $600,000 for county roads.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/25/flood-damage-roads-southern-colorado-thanksgiving/",
+      "category": "Colorado",
+      "image": {
+        "file": "2026-11-25-southern-colorado-flood-roads.webp",
+        "alt": "An aerial view of a two-lane highway with a missing section of bridge over a muddy, flooded river",
+        "caption": "flood damage along a highway in southwestern Colorado after storms in late October 2026.",
+        "credit": "The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-25-aurora-arkansas-valley-water",
+      "headline": "Aurora to spend $23 million on two Arkansas Valley farms and their water",
+      "summary": "Aurora is buying two farms and their water rights in southeastern Colorado's Lower Arkansas Valley for $23 million, about $11.5 million each, covering nearly 1,400 irrigated acres, Colorado Public Radio reported. Farmers would lease back most of the land and water and keep growing crops. The city would take the water three years out of every ten and leave the farms fallow in those years. Aurora Water's Alexandra Davis said the city would rather take 30 percent every year, so the farms could stay in production annually, if the rules can be changed. Local advocates say the lease-back is gentler than older sales that dried up farmland, and they want lasting protections for the valley's water.",
+      "sourceName": "Colorado Public Radio",
+      "sourceUrl": "https://www.cpr.org/2026/11/25/aurora-buying-lower-arkansas-valley-farms-for-water/",
+      "category": "Colorado"
+    },
+    {
+      "id": "2026-11-24-aurora-fentanyl-overdose",
+      "headline": "Two people die in a suspected fentanyl overdose at an Aurora apartment",
+      "summary": "Aurora police said two adults died and three others were hospitalized after a suspected fentanyl overdose Monday morning at the Park 16 Apartments on East 16th Avenue, just north of Colfax. Officers found five adults unresponsive shortly before 7:40 a.m. A man and a woman were pronounced dead at the scene. The other three were taken to hospitals and were initially reported in stable condition. The DEA's Rocky Mountain division called it the largest suspected mass overdose it knew of in the region since five deaths in Commerce City in February 2022. State figures cited locally show Colorado fentanyl deaths rose from 760 in 2024 to 980 in 2025. Tests are pending, and investigators are trying to trace the drugs.",
+      "sourceName": "CBS Colorado",
+      "sourceUrl": "https://www.cbsnews.com/colorado/news/fentanyl-deaths-aurora-colorado-resurgence-suspected-mass-overdose/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-24T22:22:00-07:00",
+      "image": {
+        "file": "2026-11-24-aurora-fentanyl-overdose.webp",
+        "alt": "A two-story red brick apartment building with a parking lot of cars in front under a clear sky",
+        "caption": "the Aurora apartment complex where police responded to a suspected overdose.",
+        "credit": "CBS Colorado."
+      }
+    }
+  ]
+}
