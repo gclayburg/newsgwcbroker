@@ -214,10 +214,12 @@ This owner‑authorized path supports once‑daily unattended content‑only pub
   - `public/news-images/<story-id>*.webp` (new photo files only).
 - Do not modify or delete any existing files. Do not change application code, configuration, scripts, workflows, or past editions/photos.
 - In the PR, ensure `npm ci`, `npm run validate:content`, and `npm run build` have run successfully on the exact head commit.
-- The parent reviewer must verify that:
+- The publishing agent verifies the gates and merges. The owner does not need to send a follow-up to ask for the merge. Vercel does not merge; it deploys after the merge commit is on `main`. This repository does not auto-merge.
   - the diff touches only the allowed paths above;
-  - validation and the full build succeed, and any required PR checks are green;
-  - the head SHA being merged is exactly the reviewed one; no force‑push.
+  - validation and the full build succeed, and every GitHub check on that exact head SHA is green;
+  - the head SHA being merged is exactly the reviewed one; no force-push.
+- Stay on the task after the pull request is open. As soon as the branch is pushed, watch that head SHA and keep checking its GitHub status until every check is green or one has failed. Do not treat "subscribed to CI, then ended the turn" as waiting: a subscription started after a check has already succeeded does not deliver that success, and the pull request then sits open. Read the status once more in the same turn before stopping for any reason, and merge immediately if it is already green. Preview checks have finished in under a minute; keep checking on that turn for a few minutes before handing the wait off. If you do hand it off, also set a backup check a few minutes later that merges if the checks are green and the pull request is still open.
+- Merge that exact head SHA with a merge commit only when the gates above still hold. If a check fails or the diff is wider, do not merge; report why.
 - After merge to `main`, Vercel will build and deploy. The edition is not considered published until the production deployment succeeds and `/api/health` and the latest/archive pages show the new edition.
 
 The same PR workflow is available for ongoing once‑daily publishing authorized by the owner. It does not broaden allowed paths or permit editing past editions/photos. This AGENTS.md modification is a setup‑only change; the daily publisher must not edit this file.
