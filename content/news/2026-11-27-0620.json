@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "title": "Morning Briefing — November 27, 2026",
+  "subtitle": "Ten leading U.S. and Colorado stories for Black Friday morning.",
+  "intro": "Six national stories and four Colorado stories, as of about 6:20 a.m. Mountain Time on Friday, Nov. 27. The East Coast storm, the Macy's postponement, the Iowa detonation, the Pacifica pier, the tariff proposal and the myColorado outage are carried forward under the same ids. The Black Friday photo is a file photo from Nov. 10, the Sanders photo is a file photo from August 2024, and the tariff image remains a file photo from April 2025.",
+  "publishedAt": "2026-11-27T06:20:00-07:00",
+  "stories": [
+    {
+      "id": "2026-11-23-thanksgiving-east-coast-storm",
+      "headline": "Hundreds of thousands still lack power after the Thanksgiving storm",
+      "summary": "More than 700,000 people were still without power early Friday, mainly along the East Coast, after a Thanksgiving storm The Washington Post called the worst on that holiday in decades. The National Weather Service said the storm was still bringing widespread bad weather across much of the eastern United States, including wet snow as far south as the Tennessee Valley and freezing rain in northern New England. Outages were reported in Pennsylvania, New Jersey, Maryland, Virginia, Missouri and New York. Coastal communities flooded, and holiday travel was disrupted.",
+      "sourceName": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/nation/2026/11/27/power-outages-heavy-rain-continue-east-coast-after-thanksgiving-day-storm/",
+      "category": "Weather",
+      "publishedAt": "2026-11-27T05:39:00-07:00",
+      "image": {
+        "file": "2026-11-23-thanksgiving-east-coast-storm-2.webp",
+        "alt": "People in rain gear stand on a boardwalk as foamy waves surge over a cut dune beside beachfront buildings",
+        "caption": "waves washing over dunes and onto a boardwalk in Bethany Beach, Del., on Thursday.",
+        "credit": "Kevin Dietsch/Getty Images."
+      }
+    },
+    {
+      "id": "2026-11-27-black-friday-holiday-spending",
+      "headline": "Shoppers hunt for deals as Black Friday spending is forecast to stay strong",
+      "summary": "Black Friday arrives with shoppers looking for bargains after a year of high prices, and retailers still expect a busy holiday. The personal consumption expenditures price index was up 3.8% in October from a year earlier, and Conference Board confidence fell in September to its lowest since 2014. The board estimates average planned holiday spending at $1,049, up 5.9% from last year, or 3.2% after inflation. Adobe said shoppers spent $82.5 billion online in the first 22 days of November, up 9.1%. Salesforce expects $84 billion in U.S. online sales from Nov. 24 through Nov. 30, up 6%. A Deloitte survey found 87% of shoppers plan to buy during Black Friday and Cyber Monday, the highest share since 2016, at about $624 each.",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+      "category": "Economy",
+      "publishedAt": "2026-11-27T04:00:00-07:00",
+      "image": {
+        "file": "2026-11-27-black-friday-holiday-spending.webp",
+        "alt": "A person in a dark jacket and brown pants walks a narrow clothing-store aisle lined with folded garments",
+        "caption": "file photo of a shopper in a clothing store on Broadway in New York on Nov. 10, 2026.",
+        "credit": "Spencer Platt/Getty Images."
+      }
+    },
+    {
+      "id": "2026-11-26-macys-parade-postponed",
+      "headline": "Macy's 100th parade is set for Saturday after the storm postponement",
+      "summary": "Macy's moved its 100th Thanksgiving Day Parade to Saturday because of the East Coast storm, saying the safety of participants and spectators came first. The parade is set for 8:30 a.m. Eastern Time on Nov. 28. Mayor Zohran Mamdani said Thursday's forecast called for sustained winds of 30 to 40 mph and gusts that could reach 65 mph. City rules keep the balloons down when sustained winds pass 23 mph. Executive producer Will Coss said balloons already in New York have to be deflated, trucked to New Jersey and made parade-ready again in about a day. NBC aired last year's parade Thursday morning and will broadcast Saturday's parade at 8:30 a.m. The parade was canceled only in 1942, 1943 and 1944, and the balloons last stayed on the ground in 1971.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/macys-thanksgiving-day-parade-weather-delay-rcna611355",
+      "category": "National",
+      "publishedAt": "2026-11-25T13:53:00-07:00",
+      "image": {
+        "file": "2026-11-26-macys-parade-postponed.webp",
+        "alt": "Handlers in red jumpsuits steady a giant Snoopy balloon lying on its side on a city street lined with autumn trees",
+        "caption": "handlers with the Snoopy balloon during preparations for the Macy's Thanksgiving Day Parade in New York.",
+        "credit": "NBC News."
+      }
+    },
+    {
+      "id": "2026-11-24-army-iowa-lead-detonation",
+      "headline": "Iowa lead tests start coming back as monitors show no airborne lead",
+      "summary": "Laboratory results from the Army's detonation of the U.S. stockpile of lead azide in Iowa are expected to start arriving as early as Friday, the Environmental Protection Agency said. Crews collected more than 1,500 samples of air, water, soil and dust before Wednesday's blast at the Iowa Army Ammunition Plant in Middletown, then kept sampling homes, parks and drinking water. Real-time monitors have found no airborne lead since the detonation, the EPA said, and the agency is also testing for other compounds the blast could have released. The Army has said destroying the degraded stockpile was safer than leaving it, because it might otherwise explode on its own as the weather turned colder.",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/test-results-samples-taken-iowa-detonation-are-expected-soon-epa-says-rcna611525",
+      "category": "National",
+      "publishedAt": "2026-11-27T01:14:00-07:00",
+      "image": {
+        "file": "2026-11-24-army-iowa-lead-detonation-2.webp",
+        "alt": "A person in a green jacket and blue gloves crouches by a tractor tire, holding a clear bag and a hand tool over the grass",
+        "caption": "an Environmental Protection Agency supervisor collects a soil sample in Augusta, Iowa, on Wednesday.",
+        "credit": "Austin Johnson/AP."
+      }
+    },
+    {
+      "id": "2026-11-25-pacifica-pier-collapse",
+      "headline": "King tides tear away part of the Pacifica pier",
+      "summary": "King tides and large Pacific waves tore away part of the Pacifica Municipal Pier on Wednesday. State Sen. Josh Becker said the end of the pier, which was already closed, fell into the ocean around midday. The city had shut that section in June after cracks appeared and had been stabilizing it with a $2.25 million state investment, Becker said. The National Weather Service warned of breaking waves that could reach 30 feet and kept a coastal flood advisory and high surf warning in place. San Francisco's Wednesday morning tide peaked at 8.21 feet, just under Tuesday's November record of 8.23 feet. In Marin County, officials warned Stinson Beach residents before the peak and later lifted shelter-in-place and evacuation orders after flooding in low-lying parts of Mill Valley and Corte Madera.",
+      "sourceName": "KQED",
+      "sourceUrl": "https://www.kqed.org/news/12111639/part-of-pacifica-pier-collapses-as-king-tides-and-strong-waves-batter-bay-area",
+      "category": "National",
+      "image": {
+        "file": "2026-11-25-pacifica-pier-collapse.webp",
+        "alt": "A huge wave crashing through a gap in a long pier, with the broken far end still standing on pilings",
+        "caption": "waves breaking over the Pacifica Municipal Pier in Pacifica, Calif., on Nov. 25, 2026.",
+        "credit": "Beth LaBerge/KQED."
+      }
+    },
+    {
+      "id": "2026-11-25-ustr-section-301-tariffs",
+      "headline": "U.S. proposes new tariffs on China, the E.U. and 12 other economies",
+      "summary": "U.S. Trade Representative Jamieson Greer said Wednesday that policies in 14 economies, including China and the European Union, feed excess factory capacity and burden American commerce. He proposed new tariffs for public comment. For China, the plan would put duties of up to 20% on many goods, net of an existing forced-labor tariff, and up to 10% on a shorter list tied to a U.S.-China product arrangement. For the European Union, the proposal is a 15% rate after ordinary import duties and existing Section 301 tariffs, with a possible 20% if talks fall short. The other economies named include Japan, South Korea, Taiwan, India, Vietnam, and several in Southeast Asia. Mexico and Norway were left out of Wednesday's findings. The duties are proposals and are not yet in force.",
+      "sourceName": "Office of the U.S. Trade Representative",
+      "sourceUrl": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural",
+      "category": "Economy",
+      "image": {
+        "file": "2026-11-25-ustr-section-301-tariffs.webp",
+        "alt": "President Trump at a podium beside a large chart labeled Reciprocal Tariffs, with country rates listed in columns",
+        "caption": "file photo of President Trump with a reciprocal-tariff chart at the White House on April 2, 2025.",
+        "credit": "Mark Schiefelbein/AP."
+      }
+    },
+    {
+      "id": "2026-11-27-broncos-steelers-rudolph",
+      "headline": "Broncos take a six-game streak to Pittsburgh, where Rudolph replaces Rodgers",
+      "summary": "The Denver Broncos put a six-game winning streak on the line Friday in Pittsburgh, where Mason Rudolph will start after the Steelers benched and released Aaron Rodgers. Denver is 8-2 and leads the AFC West. Pittsburgh is 6-4 and has lost two in a row. Kickoff is 3 p.m. Eastern Time on Amazon Prime, with Denver favored by three and a half points. Rudolph, 9-9-1 as a starter, said the week left people in an awkward spot and called it another chance to deal with adversity. Broncos coach Sean Payton suspended running back J.K. Dobbins on Tuesday for conduct detrimental to the team. Denver beat the Raiders 38-24 last week, when rookie Jonah Coleman ran for 111 yards and three touchdowns.",
+      "sourceName": "CBS Sports",
+      "sourceUrl": "https://www.cbssports.com/nfl/news/mason-rudolph-leads-steelers-vs-broncos-after-aaron-rodgers-exit/",
+      "category": "Sports",
+      "publishedAt": "2026-11-26T09:21:00-07:00",
+      "image": {
+        "file": "2026-11-27-broncos-steelers-rudolph.webp",
+        "alt": "Sean Payton in a gray Broncos hoodie and white cap walks a practice field with a whistle around his neck",
+        "caption": "Broncos coach Sean Payton during practice in Englewood on Nov. 25, 2026.",
+        "credit": "Ben Swanson/Denver Broncos."
+      }
+    },
+    {
+      "id": "2026-11-24-mycolorado-app-shutdown",
+      "headline": "myColorado stays offline as breach notices are due to start today",
+      "summary": "Colorado's myColorado app remains offline with no return date, and the state says notices to people whose files were reached are expected to start going out Friday. The Governor's Office of Information Technology said the Nov. 18 incident mainly involved user uploads in the myCards and Documents section, including photos and PDFs of passports, vehicle registrations and insurance cards. Payment information was not involved. The office estimates that data for about 100,000 of the app's 2.1 million users was reached, and staff are still matching files to people. Each notice is supposed to name the documents involved for that person. Until the app returns, travelers need a physical license or another accepted ID. The state said it is adding security changes before any relaunch.",
+      "sourceName": "myColorado",
+      "sourceUrl": "https://mycolorado.state.co.us/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-25T16:08:00-07:00",
+      "image": {
+        "file": "2026-11-24-mycolorado-app-shutdown.webp",
+        "alt": "A notice on a screen saying the myColorado app is currently unavailable and that the state is investigating",
+        "caption": "a notice that the myColorado app is unavailable while the state investigates.",
+        "credit": "CBS Colorado."
+      }
+    },
+    {
+      "id": "2026-11-27-colorado-local-shops-holiday",
+      "headline": "Colorado shops bet on the counter, not chatbots, for holiday sales",
+      "summary": "Denver's Wax Trax Records opened at 6 a.m. Friday for Record Store Day, two hours earlier than past Black Fridays, owner Pete Stidman said. He is pitching the Capitol Hill shop against Amazon, Target and Walmart with staff who still answer the phone. In Pueblo, Rich Lane said his 39-year-old shop, Seabel's, is skipping Black Friday for Small Business Saturday. The National Retail Federation found that 53% of shoppers still plan to buy online, the lowest share in 10 years, while 59% plan to use artificial intelligence for ideas and prices. Colorado State University professor Jonathan Zhang said stretching sales over more weeks does not raise a household's budget. At Stanley Marketplace in Aurora, pet-store owner Karina Tittjung said the rest of the year brings about 40% of her revenue.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/27/black-friday-retail-ai-sales-saturday/",
+      "category": "Colorado",
+      "publishedAt": "2026-11-27T04:00:00-07:00",
+      "image": {
+        "file": "2026-11-27-colorado-local-shops-holiday.webp",
+        "alt": "Two hands wearing silver rings flip through a bin of vinyl records divided by letter tabs",
+        "caption": "a shopper browsing records at Wax Trax in Denver on Nov. 24, 2026.",
+        "credit": "Jeremy Sparig, Special to The Colorado Sun."
+      }
+    },
+    {
+      "id": "2026-11-27-sanders-colorado-buyout",
+      "headline": "Firing Deion Sanders without cause would cost CU at least $25.5 million",
+      "summary": "The University of Colorado would owe football coach Deion Sanders at least $25.5 million if it fired him without cause at the end of the year, and about $26.1 million if it fired him now, The Colorado Sun calculated from his contract. Sanders signed a five-year, $54 million extension in March 2025. He is due $10 million this year, $11 million in each of the next two years and $12 million in the final year, and a firing without cause pays 75% of the salary still guaranteed. The Buffaloes are 7-16 since the extension and 20-28 in his four seasons. They play Central Florida in Boulder on Saturday. Sanders told reporters this week that the speculation does not cost him sleep. If he left for another job before the year ends, the university would be owed $10 million.",
+      "sourceName": "The Colorado Sun",
+      "sourceUrl": "https://coloradosun.com/2026/11/27/deion-sanders-colorado-football-contract/",
+      "category": "Sports",
+      "publishedAt": "2026-11-27T03:24:00-07:00",
+      "image": {
+        "file": "2026-11-27-sanders-colorado-buyout.webp",
+        "alt": "Deion Sanders in a black CU hoodie and cap jogs onto a football field beside a buffalo mascot",
+        "caption": "file photo of Colorado coach Deion Sanders taking the field against North Dakota State in Boulder on Aug. 29, 2024.",
+        "credit": "Jack Dempsey/AP."
+      }
+    }
+  ]
+}
